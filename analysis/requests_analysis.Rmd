@@ -1,0 +1,35 @@
+---
+title: "BeautifySJ Requests Analysis"
+author: "Michael Spencer, Barbara Cardona, Guillermo Camarillo, Jorge Nam Song"
+date: "2/19/2020"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Setup
+```{r, include=FALSE}
+### Libraries
+if (!require(tidycensus)) install.packages("tidycensus")
+library(tidycensus)
+
+if (!require(sf)) install.packages("sf")
+library(sf)
+
+if (!require(lubridate)) install.packages("lubridate")
+library(lubridate)
+
+if (!require(tidyverse)) install.packages("tidyverse")
+library(tidyverse)
+
+### Parameters
+write_my_files <- "no" # Change this if you would like fresh data files downloaded
+keep_geometry <- "no" # Change this if you plan on mapping the data here in R
+
+### Source Data
+source("../scripts/support/support_functions.R")
+source("../scripts/data/final_clean.R")
+```
+

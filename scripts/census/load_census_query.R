@@ -1,5 +1,5 @@
 ################################################################################
-## Author: Michael Spencer, Barbara Cardona, Guillermo Camrillo, Jorge Nam Song
+## Author: Michael Spencer, Barbara Cardona, Guillermo Camarillo, Jorge Nam Song
 ## Project: MS&E 108 - BeautifySJ Analysis
 ## Script Purpose: Customize query for census data pull
 ## Notes: Specify variables to gather
@@ -19,21 +19,6 @@ table_census_vars <-
 		pop_num_hisp       = "B03002_012",
 		med_income         = "B19013_001",
 		ed_total           = "B15003_001",
-		ed_less_hs_none    = "B15003_002",
-		ed_less_hs_nurse   = "B15003_003",
-		ed_less_hs_kind    = "B15003_004",
-		ed_less_hs_one     = "B15003_005",
-		ed_less_hs_two     = "B15003_006",
-		ed_less_hs_three   = "B15003_007",
-		ed_less_hs_four    = "B15003_008",
-		ed_less_hs_five    = "B15003_009",
-		ed_less_hs_six     = "B15003_010",
-		ed_less_hs_seven   = "B15003_011",
-		ed_less_hs_eight   = "B15003_012",
-		ed_less_hs_nine    = "B15003_013",
-		ed_less_hs_ten     = "B15003_014",
-		ed_less_hs_eleven  = "B15003_015",
-		ed_less_hs_twelve  = "B15003_016",
 		ed_hs_hs           = "B15003_017",
 		ed_hs_ged          = "B15003_018",
 		ed_hs_some_college = "B15003_019",
