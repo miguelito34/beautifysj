@@ -132,7 +132,7 @@ data_temp %>%
 			paste("How English Comprehension Is Related To Web & Mobile Usage\nFor", request_name),
 		subtitle = "We see that non English-speaking households may use the mobile app\nslightly more frequently than English-speaking households.",
 		x = "Linguistic Isolation (% of Households in a Census Tract)",
-		y = "% of Total Requests Made from Mobile App" 
+		y = "% of Total Requests Made from All Platforms" 
 	)
 
 data_temp %>% 
@@ -142,7 +142,7 @@ data_temp %>%
 		title = 
 			paste("How English Comprehension Is Related To Web & Mobile Usage\nFor", request_name),
 		y = "Linguistic Isolation\n(% of Households in a Census Tract)",
-		x = "% of Total Requests Made from Mobile App"
+		x = "% of Total Requests Made from All Platforms"
 	)
 ```
 
@@ -164,7 +164,7 @@ data_temp %>%
 		title = paste("How Age Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "We see that younger census block groups tend to make requests via\nthe mobile app more frequently than older blocks.",
 		x = "Median Age of Census Census Block Group",
-		y = "% of Total Requests Made from Mobile App"
+		y = "% of Total Requests Made from All Platforms"
 	)
 
 data_temp %>% 
@@ -173,7 +173,7 @@ data_temp %>%
 		title = paste("How Age Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to be slightly younger.",
 		y = "Median Age of Census Census Block Group",
-		x = "% of Total Requests Made from Mobile App"
+		x = "% of Total Requests Made from All Platforms"
 	)
 ```
 
@@ -197,7 +197,7 @@ data_temp %>%
 		title = paste("How College Education Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Request volume seems to increase in less educated census group blocks.\nThis may be confounded with other variables.",
 		x = "% of the Census Block Group Over 25 With a College Degree",
-		y = "% of Total Requests Made from Mobile App"
+		y = "% of Total Requests Made from All Platforms"
 	)
 
 data_temp %>% 
@@ -207,7 +207,7 @@ data_temp %>%
 		title = paste("How College Education Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to contain fewer college-educated residents.",
 		y = "% of the Census Block Group Over 25\nWith a College Degree",
-		x = "% of Total Requests Made from Mobile App"
+		x = "% of Total Requests Made from All Platforms"
 	)
 ```
 
@@ -231,7 +231,7 @@ data_temp %>%
 		title = paste("How Home Ownership Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher proportion of owner-occupied\nunits, mobile app usage is smaller.",
 		x = "% of the Homes Occupied by Owners",
-		y = "% of Total Requests Made from Mobile App"
+		y = "% of Total Requests Made from All Platforms"
 	)
 
 data_temp %>% 
@@ -241,7 +241,7 @@ data_temp %>%
 		title = paste("How Home Ownership Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to contain less owner-occupied units.",
 		y = "% of the Homes Occupied by Owners",
-		x = "% of Total Requests Made from Mobile App"
+		x = "% of Total Requests Made from All Platforms"
 	)
 
 # Home Renting
@@ -261,7 +261,7 @@ data_temp %>%
 		title = paste("How Home Renting Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher proportion of renter-occupied\nunits also submit a higher proportion of requests via mobile app.",
 		x = "% of the Homes Occupied by Renters",
-		y = "% of Total Requests Made from Mobile App"
+		y = "% of Total Requests Made from All Platforms"
 	)
 
 data_temp %>% 
@@ -271,7 +271,7 @@ data_temp %>%
 		title = paste("How Home Ownership Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to contain more renter-occupied units.",
 		y = "% of the Homes Occupied by Renters",
-		x = "% of Total Requests Made from Mobile App"
+		x = "% of Total Requests Made from All Platforms"
 	)
 ```
 
@@ -294,7 +294,7 @@ data_temp %>%
 	labs(
 		title = paste("How Racial Composition is Related To Web & Mobile Usage For\n", request_name),
 		x = "% of the Population that is White, Non-Hispanic",
-		y = "% of Total Requests Made from Mobile App"
+		y = "% of Total Requests Made from All Platforms"
 	)
 
 data_temp %>% 
@@ -303,7 +303,7 @@ data_temp %>%
 	labs(
 		title = paste("How Racial Composition is Related To Web & Mobile Usage For\n", request_name),
 		y = "% of the Population that is White, Non-Hispanic",
-		x = "% of Total Requests Made from Mobile App"
+		x = "% of Total Requests Made from All Platforms"
 	)
 
 # Race/Ethnicity - Hispanic
@@ -323,7 +323,7 @@ data_temp %>%
 		title = paste("How Racial Composition is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher Hispanic population\nalso submit a higher proportion of requests via mobile app.",
 		x = "% of the Population that is Hispanic, Non-White",
-		y = "% of Total Requests Made from Mobile App"
+		y = "% of Total Requests Made from All Platforms"
 	)
 
 data_temp %>% 
@@ -333,7 +333,7 @@ data_temp %>%
 		title = paste("How Racial Composition is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nhave a relatively higher Hispanic population.",
 		y = "% of the Population that is Hispanic, Non-White",
-		x = "% of Total Requests Made from Mobile App"
+		x = "% of Total Requests Made from All Platforms"
 	)
 
 # Race/Ethnicity - Asian
@@ -353,7 +353,7 @@ data_temp %>%
 		title = paste("How Racial Composition is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher Asian population\nsubmit a lower proportion of requests via mobile app.",
 		x = "% of the Population that is Asian, Non-White",
-		y = "% of Total Requests Made from Mobile App"
+		y = "% of Total Requests Made from All Platforms"
 	)
 
 data_temp %>% 
@@ -363,7 +363,7 @@ data_temp %>%
 		title = paste("How Racial Composition is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\ndo not have a relatively high Asian population.",
 		y = "% of the Population that is Asian, Non-White",
-		x = "% of Total Requests Made from Mobile App"
+		x = "% of Total Requests Made from All Platforms"
 	)
 ```
 
@@ -387,7 +387,7 @@ data_temp %>%
 		title = paste("How Income Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "We see that wealthier census block groups tend to make requests via\nthe mobile app less frequently than poorer blocks.",
 		x = "Median Income of Census Census Block Group",
-		y = "% of Total Requests Made from Mobile App"
+		y = "% of Total Requests Made from All Platforms"
 	)
 
 data_temp %>% 
@@ -397,7 +397,7 @@ data_temp %>%
 		title = paste("How Income Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to be relatively less wealthy.",
 		y = "Median Income of Census Census Block Group",
-		x = "% of Total Requests Made from Mobile App"
+		x = "% of Total Requests Made from All Platforms"
 	)
 ```
 
@@ -421,7 +421,7 @@ data_temp %>%
 		title = paste("How Cellular Connectivity is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "We see that cellular connectivity does not particularly relate with propensity to submit requests via mobile app.",
 		x = "% of the Population With a Cellular Data Subscription",
-		y = "% of Total Requests Made from Mobile App"
+		y = "% of Total Requests Made from All Platforms"
 	)
 
 data_temp %>% 
@@ -431,7 +431,7 @@ data_temp %>%
 		title = paste("How Cellular Connectivity is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\ndo not see a very strong relationship with cellular connectivity.",
 		y = "% of the Population With a Cellular Data Subscription",
-		x = "% of Total Requests Made from Mobile App"
+		x = "% of Total Requests Made from All Platforms"
 	)
 ```
 
@@ -455,7 +455,7 @@ data_temp %>%
 		title = paste("How Internet Connectivity is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher internet-connected population\nsubmit a lower proportion of requests via mobile app.",
 		x = "% of the Population With a Broadband Subscription",
-		y = "% of Total Requests Made from Mobile App"
+		y = "% of Total Requests Made from All Platforms"
 	)
 
 data_temp %>% 
@@ -465,7 +465,7 @@ data_temp %>%
 		title = paste("How Internet Connectivity is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nare less connected to the internet via broadband service.",
 		y = "% of the Population With a\nBroadband Subscription",
-		x = "% of Total Requests Made from Mobile App"
+		x = "% of Total Requests Made from All Platforms"
 	)
 ```
 
@@ -499,7 +499,7 @@ data_temp %>%
 			paste("How English Comprehension Is Related To Web & Mobile Usage\nFor", request_name),
 		subtitle = "We see that non English-speaking households may use the mobile app\nslightly more frequently than English-speaking households.",
 		x = "Linguistic Isolation (% of Households in a Census Tract)",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -509,7 +509,7 @@ data_temp %>%
 		title = 
 			paste("How English Comprehension Is Related To Web & Mobile Usage\nFor", request_name),
 		y = "Linguistic Isolation\n(% of Households in a Census Tract)",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 ```
 
@@ -531,7 +531,7 @@ data_temp %>%
 		title = paste("How Age Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "We see that younger census block groups tend to make requests via\nthe mobile app more frequently than older blocks.",
 		x = "Median Age of Census Census Block Group",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -540,7 +540,7 @@ data_temp %>%
 		title = paste("How Age Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to be slightly younger.",
 		y = "Median Age of Census Census Block Group",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 ```
 
@@ -564,7 +564,7 @@ data_temp %>%
 		title = paste("How College Education Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Request volume seems to increase in less educated census group blocks.\nThis may be confounded with other variables.",
 		x = "% of the Census Block Group Over 25 With a College Degree",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -574,7 +574,7 @@ data_temp %>%
 		title = paste("How College Education Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to contain fewer college-educated residents.",
 		y = "% of the Census Block Group Over 25\nWith a College Degree",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 ```
 
@@ -598,7 +598,7 @@ data_temp %>%
 		title = paste("How Home Ownership Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher proportion of owner-occupied\nunits, mobile app usage is smaller.",
 		x = "% of the Homes Occupied by Owners",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -608,7 +608,7 @@ data_temp %>%
 		title = paste("How Home Ownership Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to contain less owner-occupied units.",
 		y = "% of the Homes Occupied by Owners",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 # Home Renting
@@ -628,7 +628,7 @@ data_temp %>%
 		title = paste("How Home Renting Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher proportion of renter-occupied\nunits also submit a higher proportion of requests via mobile app.",
 		x = "% of the Homes Occupied by Renters",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -638,7 +638,7 @@ data_temp %>%
 		title = paste("How Home Ownership Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to contain more renter-occupied units.",
 		y = "% of the Homes Occupied by Renters",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 ```
 
@@ -661,7 +661,7 @@ data_temp %>%
 	labs(
 		title = paste("How Racial Composition is Related To Web & Mobile Usage For\n", request_name),
 		x = "% of the Population that is White, Non-Hispanic",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -670,7 +670,7 @@ data_temp %>%
 	labs(
 		title = paste("How Racial Composition is Related To Web & Mobile Usage For\n", request_name),
 		y = "% of the Population that is White, Non-Hispanic",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 # Race/Ethnicity - Hispanic
@@ -690,7 +690,7 @@ data_temp %>%
 		title = paste("How Racial Composition is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher Hispanic population\nalso submit a higher proportion of requests via mobile app.",
 		x = "% of the Population that is Hispanic, Non-White",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -700,7 +700,7 @@ data_temp %>%
 		title = paste("How Racial Composition is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nhave a relatively higher Hispanic population.",
 		y = "% of the Population that is Hispanic, Non-White",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 # Race/Ethnicity - Asian
@@ -720,7 +720,7 @@ data_temp %>%
 		title = paste("How Racial Composition is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher Asian population\nsubmit a lower proportion of requests via mobile app.",
 		x = "% of the Population that is Asian, Non-White",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -730,7 +730,7 @@ data_temp %>%
 		title = paste("How Racial Composition is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\ndo not have a relatively high Asian population.",
 		y = "% of the Population that is Asian, Non-White",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 ```
 
@@ -754,7 +754,7 @@ data_temp %>%
 		title = paste("How Income Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "We see that wealthier census block groups tend to make requests via\nthe mobile app less frequently than poorer blocks.",
 		x = "Median Income of Census Census Block Group",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -764,7 +764,7 @@ data_temp %>%
 		title = paste("How Income Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to be relatively less wealthy.",
 		y = "Median Income of Census Census Block Group",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 ```
 
@@ -788,7 +788,7 @@ data_temp %>%
 		title = paste("How Cellular Connectivity is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "We see that cellular connectivity does not particularly relate with propensity to submit requests via mobile app.",
 		x = "% of the Population With a Cellular Data Subscription",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -798,7 +798,7 @@ data_temp %>%
 		title = paste("How Cellular Connectivity is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\ndo not see a very strong relationship with cellular connectivity.",
 		y = "% of the Population With a Cellular Data Subscription",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 ```
 
@@ -822,7 +822,7 @@ data_temp %>%
 		title = paste("How Internet Connectivity is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher internet-connected population\nsubmit a lower proportion of requests via mobile app.",
 		x = "% of the Population With a Broadband Subscription",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -832,7 +832,7 @@ data_temp %>%
 		title = paste("How Internet Connectivity is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nare less connected to the internet via broadband service.",
 		y = "% of the Population With a\nBroadband Subscription",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 ```
 
@@ -866,7 +866,7 @@ data_temp %>%
 			paste("How English Comprehension Is Related To Web & Mobile Usage\nFor", request_name),
 		subtitle = "We see that non English-speaking households may use the mobile app\nslightly more frequently than English-speaking households.",
 		x = "Linguistic Isolation (% of Households in a Census Tract)",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -876,7 +876,7 @@ data_temp %>%
 		title = 
 			paste("How English Comprehension Is Related To Web & Mobile Usage\nFor", request_name),
 		y = "Linguistic Isolation\n(% of Households in a Census Tract)",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 ```
 
@@ -898,7 +898,7 @@ data_temp %>%
 		title = paste("How Age Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "We see that younger census block groups tend to make requests via\nthe mobile app more frequently than older blocks.",
 		x = "Median Age of Census Census Block Group",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -907,7 +907,7 @@ data_temp %>%
 		title = paste("How Age Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to be slightly younger.",
 		y = "Median Age of Census Census Block Group",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 ```
 
@@ -931,7 +931,7 @@ data_temp %>%
 		title = paste("How College Education Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Request volume seems to increase in less educated census group blocks.\nThis may be confounded with other variables.",
 		x = "% of the Census Block Group Over 25 With a College Degree",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -941,7 +941,7 @@ data_temp %>%
 		title = paste("How College Education Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to contain fewer college-educated residents.",
 		y = "% of the Census Block Group Over 25\nWith a College Degree",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 ```
 
@@ -965,7 +965,7 @@ data_temp %>%
 		title = paste("How Home Ownership Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher proportion of owner-occupied\nunits, mobile app usage is smaller.",
 		x = "% of the Homes Occupied by Owners",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -975,7 +975,7 @@ data_temp %>%
 		title = paste("How Home Ownership Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to contain less owner-occupied units.",
 		y = "% of the Homes Occupied by Owners",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 # Home Renting
@@ -995,7 +995,7 @@ data_temp %>%
 		title = paste("How Home Renting Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher proportion of renter-occupied\nunits also submit a higher proportion of requests via mobile app.",
 		x = "% of the Homes Occupied by Renters",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -1005,7 +1005,7 @@ data_temp %>%
 		title = paste("How Home Ownership Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to contain more renter-occupied units.",
 		y = "% of the Homes Occupied by Renters",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 ```
 
@@ -1028,7 +1028,7 @@ data_temp %>%
 	labs(
 		title = paste("How Racial Composition is Related To Web & Mobile Usage For\n", request_name),
 		x = "% of the Population that is White, Non-Hispanic",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -1037,7 +1037,7 @@ data_temp %>%
 	labs(
 		title = paste("How Racial Composition is Related To Web & Mobile Usage For\n", request_name),
 		y = "% of the Population that is White, Non-Hispanic",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 # Race/Ethnicity - Hispanic
@@ -1057,7 +1057,7 @@ data_temp %>%
 		title = paste("How Racial Composition is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher Hispanic population\nalso submit a higher proportion of requests via mobile app.",
 		x = "% of the Population that is Hispanic, Non-White",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -1067,7 +1067,7 @@ data_temp %>%
 		title = paste("How Racial Composition is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nhave a relatively higher Hispanic population.",
 		y = "% of the Population that is Hispanic, Non-White",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 # Race/Ethnicity - Asian
@@ -1087,7 +1087,7 @@ data_temp %>%
 		title = paste("How Racial Composition is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher Asian population\nsubmit a lower proportion of requests via mobile app.",
 		x = "% of the Population that is Asian, Non-White",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -1097,7 +1097,7 @@ data_temp %>%
 		title = paste("How Racial Composition is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\ndo not have a relatively high Asian population.",
 		y = "% of the Population that is Asian, Non-White",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 ```
 
@@ -1121,7 +1121,7 @@ data_temp %>%
 		title = paste("How Income Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "We see that wealthier census block groups tend to make requests via\nthe mobile app less frequently than poorer blocks.",
 		x = "Median Income of Census Census Block Group",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -1131,7 +1131,7 @@ data_temp %>%
 		title = paste("How Income Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to be relatively less wealthy.",
 		y = "Median Income of Census Census Block Group",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 ```
 
@@ -1155,7 +1155,7 @@ data_temp %>%
 		title = paste("How Cellular Connectivity is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "We see that cellular connectivity does not particularly relate with propensity to submit requests via mobile app.",
 		x = "% of the Population With a Cellular Data Subscription",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -1165,7 +1165,7 @@ data_temp %>%
 		title = paste("How Cellular Connectivity is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\ndo not see a very strong relationship with cellular connectivity.",
 		y = "% of the Population With a Cellular Data Subscription",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 ```
 
@@ -1189,7 +1189,7 @@ data_temp %>%
 		title = paste("How Internet Connectivity is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher internet-connected population\nsubmit a lower proportion of requests via mobile app.",
 		x = "% of the Population With a Broadband Subscription",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -1199,7 +1199,7 @@ data_temp %>%
 		title = paste("How Internet Connectivity is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nare less connected to the internet via broadband service.",
 		y = "% of the Population With a\nBroadband Subscription",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 ```
 
@@ -1233,7 +1233,7 @@ data_temp %>%
 			paste("How English Comprehension Is Related To Web & Mobile Usage\nFor", request_name),
 		subtitle = "We see that non English-speaking households may use the mobile app\nslightly more frequently than English-speaking households.",
 		x = "Linguistic Isolation (% of Households in a Census Tract)",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -1243,7 +1243,7 @@ data_temp %>%
 		title = 
 			paste("How English Comprehension Is Related To Web & Mobile Usage\nFor", request_name),
 		y = "Linguistic Isolation\n(% of Households in a Census Tract)",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 ```
 
@@ -1265,7 +1265,7 @@ data_temp %>%
 		title = paste("How Age Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "We see that younger census block groups tend to make requests via\nthe mobile app more frequently than older blocks.",
 		x = "Median Age of Census Census Block Group",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -1274,7 +1274,7 @@ data_temp %>%
 		title = paste("How Age Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to be slightly younger.",
 		y = "Median Age of Census Census Block Group",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 ```
 
@@ -1298,7 +1298,7 @@ data_temp %>%
 		title = paste("How College Education Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Request volume seems to increase in less educated census group blocks.\nThis may be confounded with other variables.",
 		x = "% of the Census Block Group Over 25 With a College Degree",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -1308,7 +1308,7 @@ data_temp %>%
 		title = paste("How College Education Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to contain fewer college-educated residents.",
 		y = "% of the Census Block Group Over 25\nWith a College Degree",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 ```
 
@@ -1332,7 +1332,7 @@ data_temp %>%
 		title = paste("How Home Ownership Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher proportion of owner-occupied\nunits, mobile app usage is smaller.",
 		x = "% of the Homes Occupied by Owners",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -1342,7 +1342,7 @@ data_temp %>%
 		title = paste("How Home Ownership Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to contain less owner-occupied units.",
 		y = "% of the Homes Occupied by Owners",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 # Home Renting
@@ -1362,7 +1362,7 @@ data_temp %>%
 		title = paste("How Home Renting Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher proportion of renter-occupied\nunits also submit a higher proportion of requests via mobile app.",
 		x = "% of the Homes Occupied by Renters",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -1372,7 +1372,7 @@ data_temp %>%
 		title = paste("How Home Ownership Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to contain more renter-occupied units.",
 		y = "% of the Homes Occupied by Renters",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 ```
 
@@ -1395,7 +1395,7 @@ data_temp %>%
 	labs(
 		title = paste("How Racial Composition is Related To Web & Mobile Usage For\n", request_name),
 		x = "% of the Population that is White, Non-Hispanic",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -1404,7 +1404,7 @@ data_temp %>%
 	labs(
 		title = paste("How Racial Composition is Related To Web & Mobile Usage For\n", request_name),
 		y = "% of the Population that is White, Non-Hispanic",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 # Race/Ethnicity - Hispanic
@@ -1424,7 +1424,7 @@ data_temp %>%
 		title = paste("How Racial Composition is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher Hispanic population\nalso submit a higher proportion of requests via mobile app.",
 		x = "% of the Population that is Hispanic, Non-White",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -1434,7 +1434,7 @@ data_temp %>%
 		title = paste("How Racial Composition is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nhave a relatively higher Hispanic population.",
 		y = "% of the Population that is Hispanic, Non-White",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 # Race/Ethnicity - Asian
@@ -1454,7 +1454,7 @@ data_temp %>%
 		title = paste("How Racial Composition is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher Asian population\nsubmit a lower proportion of requests via mobile app.",
 		x = "% of the Population that is Asian, Non-White",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -1464,7 +1464,7 @@ data_temp %>%
 		title = paste("How Racial Composition is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\ndo not have a relatively high Asian population.",
 		y = "% of the Population that is Asian, Non-White",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 ```
 
@@ -1488,7 +1488,7 @@ data_temp %>%
 		title = paste("How Income Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "We see that wealthier census block groups tend to make requests via\nthe mobile app less frequently than poorer blocks.",
 		x = "Median Income of Census Census Block Group",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -1498,7 +1498,7 @@ data_temp %>%
 		title = paste("How Income Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to be relatively less wealthy.",
 		y = "Median Income of Census Census Block Group",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 ```
 
@@ -1522,7 +1522,7 @@ data_temp %>%
 		title = paste("How Cellular Connectivity is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "We see that cellular connectivity does not particularly relate with propensity to submit requests via mobile app.",
 		x = "% of the Population With a Cellular Data Subscription",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -1532,7 +1532,7 @@ data_temp %>%
 		title = paste("How Cellular Connectivity is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\ndo not see a very strong relationship with cellular connectivity.",
 		y = "% of the Population With a Cellular Data Subscription",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 ```
 
@@ -1556,7 +1556,7 @@ data_temp %>%
 		title = paste("How Internet Connectivity is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher internet-connected population\nsubmit a lower proportion of requests via mobile app.",
 		x = "% of the Population With a Broadband Subscription",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -1566,7 +1566,7 @@ data_temp %>%
 		title = paste("How Internet Connectivity is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nare less connected to the internet via broadband service.",
 		y = "% of the Population With a\nBroadband Subscription",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 ```
 
@@ -1600,7 +1600,7 @@ data_temp %>%
 			paste("How English Comprehension Is Related To Web & Mobile Usage\nFor", request_name),
 		subtitle = "We see that non English-speaking households may use the mobile app\nslightly more frequently than English-speaking households.",
 		x = "Linguistic Isolation (% of Households in a Census Tract)",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -1610,7 +1610,7 @@ data_temp %>%
 		title = 
 			paste("How English Comprehension Is Related To Web & Mobile Usage\nFor", request_name),
 		y = "Linguistic Isolation\n(% of Households in a Census Tract)",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 ```
 
@@ -1632,7 +1632,7 @@ data_temp %>%
 		title = paste("How Age Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "We see that younger census block groups tend to make requests via\nthe mobile app more frequently than older blocks.",
 		x = "Median Age of Census Census Block Group",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -1641,7 +1641,7 @@ data_temp %>%
 		title = paste("How Age Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to be slightly younger.",
 		y = "Median Age of Census Census Block Group",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 ```
 
@@ -1665,7 +1665,7 @@ data_temp %>%
 		title = paste("How College Education Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Request volume seems to increase in less educated census group blocks.\nThis may be confounded with other variables.",
 		x = "% of the Census Block Group Over 25 With a College Degree",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -1675,7 +1675,7 @@ data_temp %>%
 		title = paste("How College Education Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to contain fewer college-educated residents.",
 		y = "% of the Census Block Group Over 25\nWith a College Degree",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 ```
 
@@ -1699,7 +1699,7 @@ data_temp %>%
 		title = paste("How Home Ownership Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher proportion of owner-occupied\nunits, mobile app usage is smaller.",
 		x = "% of the Homes Occupied by Owners",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -1709,7 +1709,7 @@ data_temp %>%
 		title = paste("How Home Ownership Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to contain less owner-occupied units.",
 		y = "% of the Homes Occupied by Owners",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 # Home Renting
@@ -1729,7 +1729,7 @@ data_temp %>%
 		title = paste("How Home Renting Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher proportion of renter-occupied\nunits also submit a higher proportion of requests via mobile app.",
 		x = "% of the Homes Occupied by Renters",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -1739,7 +1739,7 @@ data_temp %>%
 		title = paste("How Home Ownership Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to contain more renter-occupied units.",
 		y = "% of the Homes Occupied by Renters",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 ```
 
@@ -1762,7 +1762,7 @@ data_temp %>%
 	labs(
 		title = paste("How Racial Composition is Related To Web & Mobile Usage For\n", request_name),
 		x = "% of the Population that is White, Non-Hispanic",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -1771,7 +1771,7 @@ data_temp %>%
 	labs(
 		title = paste("How Racial Composition is Related To Web & Mobile Usage For\n", request_name),
 		y = "% of the Population that is White, Non-Hispanic",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 # Race/Ethnicity - Hispanic
@@ -1791,7 +1791,7 @@ data_temp %>%
 		title = paste("How Racial Composition is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher Hispanic population\nalso submit a higher proportion of requests via mobile app.",
 		x = "% of the Population that is Hispanic, Non-White",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -1801,7 +1801,7 @@ data_temp %>%
 		title = paste("How Racial Composition is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nhave a relatively higher Hispanic population.",
 		y = "% of the Population that is Hispanic, Non-White",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 # Race/Ethnicity - Asian
@@ -1821,7 +1821,7 @@ data_temp %>%
 		title = paste("How Racial Composition is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher Asian population\nsubmit a lower proportion of requests via mobile app.",
 		x = "% of the Population that is Asian, Non-White",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -1831,7 +1831,7 @@ data_temp %>%
 		title = paste("How Racial Composition is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\ndo not have a relatively high Asian population.",
 		y = "% of the Population that is Asian, Non-White",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 ```
 
@@ -1855,7 +1855,7 @@ data_temp %>%
 		title = paste("How Income Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "We see that wealthier census block groups tend to make requests via\nthe mobile app less frequently than poorer blocks.",
 		x = "Median Income of Census Census Block Group",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -1865,7 +1865,7 @@ data_temp %>%
 		title = paste("How Income Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to be relatively less wealthy.",
 		y = "Median Income of Census Census Block Group",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 ```
 
@@ -1889,7 +1889,7 @@ data_temp %>%
 		title = paste("How Cellular Connectivity is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "We see that cellular connectivity does not particularly relate with propensity to submit requests via mobile app.",
 		x = "% of the Population With a Cellular Data Subscription",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -1899,7 +1899,7 @@ data_temp %>%
 		title = paste("How Cellular Connectivity is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\ndo not see a very strong relationship with cellular connectivity.",
 		y = "% of the Population With a Cellular Data Subscription",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 ```
 
@@ -1923,7 +1923,7 @@ data_temp %>%
 		title = paste("How Internet Connectivity is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher internet-connected population\nsubmit a lower proportion of requests via mobile app.",
 		x = "% of the Population With a Broadband Subscription",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -1933,7 +1933,7 @@ data_temp %>%
 		title = paste("How Internet Connectivity is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nare less connected to the internet via broadband service.",
 		y = "% of the Population With a\nBroadband Subscription",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 ```
 
@@ -1967,7 +1967,7 @@ data_temp %>%
 			paste("How English Comprehension Is Related To Web & Mobile Usage\nFor", request_name),
 		subtitle = "We see that non English-speaking households may use the mobile app\nslightly more frequently than English-speaking households.",
 		x = "Linguistic Isolation (% of Households in a Census Tract)",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -1977,7 +1977,7 @@ data_temp %>%
 		title = 
 			paste("How English Comprehension Is Related To Web & Mobile Usage\nFor", request_name),
 		y = "Linguistic Isolation\n(% of Households in a Census Tract)",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 ```
 
@@ -1999,7 +1999,7 @@ data_temp %>%
 		title = paste("How Age Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "We see that younger census block groups tend to make requests via\nthe mobile app more frequently than older blocks.",
 		x = "Median Age of Census Census Block Group",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -2008,7 +2008,7 @@ data_temp %>%
 		title = paste("How Age Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to be slightly younger.",
 		y = "Median Age of Census Census Block Group",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 ```
 
@@ -2032,7 +2032,7 @@ data_temp %>%
 		title = paste("How College Education Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Request volume seems to increase in less educated census group blocks.\nThis may be confounded with other variables.",
 		x = "% of the Census Block Group Over 25 With a College Degree",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -2042,7 +2042,7 @@ data_temp %>%
 		title = paste("How College Education Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to contain fewer college-educated residents.",
 		y = "% of the Census Block Group Over 25\nWith a College Degree",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 ```
 
@@ -2066,7 +2066,7 @@ data_temp %>%
 		title = paste("How Home Ownership Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher proportion of owner-occupied\nunits, mobile app usage is smaller.",
 		x = "% of the Homes Occupied by Owners",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -2076,7 +2076,7 @@ data_temp %>%
 		title = paste("How Home Ownership Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to contain less owner-occupied units.",
 		y = "% of the Homes Occupied by Owners",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 # Home Renting
@@ -2096,7 +2096,7 @@ data_temp %>%
 		title = paste("How Home Renting Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher proportion of renter-occupied\nunits also submit a higher proportion of requests via mobile app.",
 		x = "% of the Homes Occupied by Renters",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -2106,7 +2106,7 @@ data_temp %>%
 		title = paste("How Home Ownership Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to contain more renter-occupied units.",
 		y = "% of the Homes Occupied by Renters",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 ```
 
@@ -2129,7 +2129,7 @@ data_temp %>%
 	labs(
 		title = paste("How Racial Composition is Related To Web & Mobile Usage For\n", request_name),
 		x = "% of the Population that is White, Non-Hispanic",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -2138,7 +2138,7 @@ data_temp %>%
 	labs(
 		title = paste("How Racial Composition is Related To Web & Mobile Usage For\n", request_name),
 		y = "% of the Population that is White, Non-Hispanic",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 # Race/Ethnicity - Hispanic
@@ -2158,7 +2158,7 @@ data_temp %>%
 		title = paste("How Racial Composition is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher Hispanic population\nalso submit a higher proportion of requests via mobile app.",
 		x = "% of the Population that is Hispanic, Non-White",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -2168,7 +2168,7 @@ data_temp %>%
 		title = paste("How Racial Composition is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nhave a relatively higher Hispanic population.",
 		y = "% of the Population that is Hispanic, Non-White",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 # Race/Ethnicity - Asian
@@ -2188,7 +2188,7 @@ data_temp %>%
 		title = paste("How Racial Composition is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher Asian population\nsubmit a lower proportion of requests via mobile app.",
 		x = "% of the Population that is Asian, Non-White",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -2198,7 +2198,7 @@ data_temp %>%
 		title = paste("How Racial Composition is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\ndo not have a relatively high Asian population.",
 		y = "% of the Population that is Asian, Non-White",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 ```
 
@@ -2222,7 +2222,7 @@ data_temp %>%
 		title = paste("How Income Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "We see that wealthier census block groups tend to make requests via\nthe mobile app less frequently than poorer blocks.",
 		x = "Median Income of Census Census Block Group",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -2232,7 +2232,7 @@ data_temp %>%
 		title = paste("How Income Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to be relatively less wealthy.",
 		y = "Median Income of Census Census Block Group",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 ```
 
@@ -2256,7 +2256,7 @@ data_temp %>%
 		title = paste("How Cellular Connectivity is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "We see that cellular connectivity does not particularly relate with propensity to submit requests via mobile app.",
 		x = "% of the Population With a Cellular Data Subscription",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -2266,7 +2266,7 @@ data_temp %>%
 		title = paste("How Cellular Connectivity is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\ndo not see a very strong relationship with cellular connectivity.",
 		y = "% of the Population With a Cellular Data Subscription",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 ```
 
@@ -2290,7 +2290,7 @@ data_temp %>%
 		title = paste("How Internet Connectivity is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher internet-connected population\nsubmit a lower proportion of requests via mobile app.",
 		x = "% of the Population With a Broadband Subscription",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -2300,7 +2300,7 @@ data_temp %>%
 		title = paste("How Internet Connectivity is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nare less connected to the internet via broadband service.",
 		y = "% of the Population With a\nBroadband Subscription",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 ```
 
@@ -2334,7 +2334,7 @@ data_temp %>%
 			paste("How English Comprehension Is Related To Web & Mobile Usage\nFor", request_name),
 		subtitle = "We see that non English-speaking households may use the mobile app\nslightly more frequently than English-speaking households.",
 		x = "Linguistic Isolation (% of Households in a Census Tract)",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -2344,7 +2344,7 @@ data_temp %>%
 		title = 
 			paste("How English Comprehension Is Related To Web & Mobile Usage\nFor", request_name),
 		y = "Linguistic Isolation\n(% of Households in a Census Tract)",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 ```
 
@@ -2366,7 +2366,7 @@ data_temp %>%
 		title = paste("How Age Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "We see that younger census block groups tend to make requests via\nthe mobile app more frequently than older blocks.",
 		x = "Median Age of Census Census Block Group",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -2375,7 +2375,7 @@ data_temp %>%
 		title = paste("How Age Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to be slightly younger.",
 		y = "Median Age of Census Census Block Group",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 ```
 
@@ -2399,7 +2399,7 @@ data_temp %>%
 		title = paste("How College Education Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Request volume seems to increase in less educated census group blocks.\nThis may be confounded with other variables.",
 		x = "% of the Census Block Group Over 25 With a College Degree",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -2409,7 +2409,7 @@ data_temp %>%
 		title = paste("How College Education Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to contain fewer college-educated residents.",
 		y = "% of the Census Block Group Over 25\nWith a College Degree",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 ```
 
@@ -2433,7 +2433,7 @@ data_temp %>%
 		title = paste("How Home Ownership Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher proportion of owner-occupied\nunits, mobile app usage is smaller.",
 		x = "% of the Homes Occupied by Owners",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -2443,7 +2443,7 @@ data_temp %>%
 		title = paste("How Home Ownership Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to contain less owner-occupied units.",
 		y = "% of the Homes Occupied by Owners",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 # Home Renting
@@ -2463,7 +2463,7 @@ data_temp %>%
 		title = paste("How Home Renting Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher proportion of renter-occupied\nunits also submit a higher proportion of requests via mobile app.",
 		x = "% of the Homes Occupied by Renters",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -2473,7 +2473,7 @@ data_temp %>%
 		title = paste("How Home Ownership Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to contain more renter-occupied units.",
 		y = "% of the Homes Occupied by Renters",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 ```
 
@@ -2496,7 +2496,7 @@ data_temp %>%
 	labs(
 		title = paste("How Racial Composition is Related To Web & Mobile Usage For\n", request_name),
 		x = "% of the Population that is White, Non-Hispanic",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -2505,7 +2505,7 @@ data_temp %>%
 	labs(
 		title = paste("How Racial Composition is Related To Web & Mobile Usage For\n", request_name),
 		y = "% of the Population that is White, Non-Hispanic",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 # Race/Ethnicity - Hispanic
@@ -2525,7 +2525,7 @@ data_temp %>%
 		title = paste("How Racial Composition is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher Hispanic population\nalso submit a higher proportion of requests via mobile app.",
 		x = "% of the Population that is Hispanic, Non-White",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -2535,7 +2535,7 @@ data_temp %>%
 		title = paste("How Racial Composition is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nhave a relatively higher Hispanic population.",
 		y = "% of the Population that is Hispanic, Non-White",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 # Race/Ethnicity - Asian
@@ -2555,7 +2555,7 @@ data_temp %>%
 		title = paste("How Racial Composition is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher Asian population\nsubmit a lower proportion of requests via mobile app.",
 		x = "% of the Population that is Asian, Non-White",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -2565,7 +2565,7 @@ data_temp %>%
 		title = paste("How Racial Composition is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\ndo not have a relatively high Asian population.",
 		y = "% of the Population that is Asian, Non-White",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 ```
 
@@ -2589,7 +2589,7 @@ data_temp %>%
 		title = paste("How Income Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "We see that wealthier census block groups tend to make requests via\nthe mobile app less frequently than poorer blocks.",
 		x = "Median Income of Census Census Block Group",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -2599,7 +2599,7 @@ data_temp %>%
 		title = paste("How Income Is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to be relatively less wealthy.",
 		y = "Median Income of Census Census Block Group",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 ```
 
@@ -2623,7 +2623,7 @@ data_temp %>%
 		title = paste("How Cellular Connectivity is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "We see that cellular connectivity does not particularly relate with propensity to submit requests via mobile app.",
 		x = "% of the Population With a Cellular Data Subscription",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -2633,7 +2633,7 @@ data_temp %>%
 		title = paste("How Cellular Connectivity is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\ndo not see a very strong relationship with cellular connectivity.",
 		y = "% of the Population With a Cellular Data Subscription",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 ```
 
@@ -2657,7 +2657,7 @@ data_temp %>%
 		title = paste("How Internet Connectivity is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher internet-connected population\nsubmit a lower proportion of requests via mobile app.",
 		x = "% of the Population With a Broadband Subscription",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 
 data_temp %>% 
@@ -2667,7 +2667,7 @@ data_temp %>%
 		title = paste("How Internet Connectivity is Related To Web & Mobile Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nare less connected to the internet via broadband service.",
 		y = "% of the Population With a\nBroadband Subscription",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from All Platforms") 
 	)
 ```
 
@@ -5272,7 +5272,7 @@ data_temp %>%
 			paste("How English Comprehension Is Related To Web Usage\nFor", request_name),
 		subtitle = "We see that non English-speaking households may use the mobile app\nslightly more frequently than English-speaking households.",
 		x = "Linguistic Isolation (% of Households in a Census Tract)",
-		y = "% of Total Requests Made from Mobile App" 
+		y = "% of Total Requests Made from Web Platform" 
 	)
 
 data_temp %>% 
@@ -5282,7 +5282,7 @@ data_temp %>%
 		title = 
 			paste("How English Comprehension Is Related To Web Usage\nFor", request_name),
 		y = "Linguistic Isolation\n(% of Households in a Census Tract)",
-		x = "% of Total Requests Made from Mobile App"
+		x = "% of Total Requests Made from Web Platform"
 	)
 ```
 
@@ -5304,7 +5304,7 @@ data_temp %>%
 		title = paste("How Age Is Related To Web Usage For\n", request_name),
 		subtitle = "We see that younger census block groups tend to make requests via\nthe mobile app more frequently than older blocks.",
 		x = "Median Age of Census Census Block Group",
-		y = "% of Total Requests Made from Mobile App"
+		y = "% of Total Requests Made from Web Platform"
 	)
 
 data_temp %>% 
@@ -5313,7 +5313,7 @@ data_temp %>%
 		title = paste("How Age Is Related To Web Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to be slightly younger.",
 		y = "Median Age of Census Census Block Group",
-		x = "% of Total Requests Made from Mobile App"
+		x = "% of Total Requests Made from Web Platform"
 	)
 ```
 
@@ -5337,7 +5337,7 @@ data_temp %>%
 		title = paste("How College Education Is Related To Web Usage For\n", request_name),
 		subtitle = "Request volume seems to increase in less educated census group blocks.\nThis may be confounded with other variables.",
 		x = "% of the Census Block Group Over 25 With a College Degree",
-		y = "% of Total Requests Made from Mobile App"
+		y = "% of Total Requests Made from Web Platform"
 	)
 
 data_temp %>% 
@@ -5347,7 +5347,7 @@ data_temp %>%
 		title = paste("How College Education Is Related To Web Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to contain fewer college-educated residents.",
 		y = "% of the Census Block Group Over 25\nWith a College Degree",
-		x = "% of Total Requests Made from Mobile App"
+		x = "% of Total Requests Made from Web Platform"
 	)
 ```
 
@@ -5371,7 +5371,7 @@ data_temp %>%
 		title = paste("How Home Ownership Is Related To Web Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher proportion of owner-occupied\nunits, mobile app usage is smaller.",
 		x = "% of the Homes Occupied by Owners",
-		y = "% of Total Requests Made from Mobile App"
+		y = "% of Total Requests Made from Web Platform"
 	)
 
 data_temp %>% 
@@ -5381,7 +5381,7 @@ data_temp %>%
 		title = paste("How Home Ownership Is Related To Web Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to contain less owner-occupied units.",
 		y = "% of the Homes Occupied by Owners",
-		x = "% of Total Requests Made from Mobile App"
+		x = "% of Total Requests Made from Web Platform"
 	)
 
 # Home Renting
@@ -5401,7 +5401,7 @@ data_temp %>%
 		title = paste("How Home Renting Is Related To Web Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher proportion of renter-occupied\nunits also submit a higher proportion of requests via mobile app.",
 		x = "% of the Homes Occupied by Renters",
-		y = "% of Total Requests Made from Mobile App"
+		y = "% of Total Requests Made from Web Platform"
 	)
 
 data_temp %>% 
@@ -5411,7 +5411,7 @@ data_temp %>%
 		title = paste("How Home Ownership Is Related To Web Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to contain more renter-occupied units.",
 		y = "% of the Homes Occupied by Renters",
-		x = "% of Total Requests Made from Mobile App"
+		x = "% of Total Requests Made from Web Platform"
 	)
 ```
 
@@ -5434,7 +5434,7 @@ data_temp %>%
 	labs(
 		title = paste("How Racial Composition is Related To Web Usage For\n", request_name),
 		x = "% of the Population that is White, Non-Hispanic",
-		y = "% of Total Requests Made from Mobile App"
+		y = "% of Total Requests Made from Web Platform"
 	)
 
 data_temp %>% 
@@ -5443,7 +5443,7 @@ data_temp %>%
 	labs(
 		title = paste("How Racial Composition is Related To Web Usage For\n", request_name),
 		y = "% of the Population that is White, Non-Hispanic",
-		x = "% of Total Requests Made from Mobile App"
+		x = "% of Total Requests Made from Web Platform"
 	)
 
 # Race/Ethnicity - Hispanic
@@ -5463,7 +5463,7 @@ data_temp %>%
 		title = paste("How Racial Composition is Related To Web Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher Hispanic population\nalso submit a higher proportion of requests via mobile app.",
 		x = "% of the Population that is Hispanic, Non-White",
-		y = "% of Total Requests Made from Mobile App"
+		y = "% of Total Requests Made from Web Platform"
 	)
 
 data_temp %>% 
@@ -5473,7 +5473,7 @@ data_temp %>%
 		title = paste("How Racial Composition is Related To Web Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nhave a relatively higher Hispanic population.",
 		y = "% of the Population that is Hispanic, Non-White",
-		x = "% of Total Requests Made from Mobile App"
+		x = "% of Total Requests Made from Web Platform"
 	)
 
 # Race/Ethnicity - Asian
@@ -5493,7 +5493,7 @@ data_temp %>%
 		title = paste("How Racial Composition is Related To Web Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher Asian population\nsubmit a lower proportion of requests via mobile app.",
 		x = "% of the Population that is Asian, Non-White",
-		y = "% of Total Requests Made from Mobile App"
+		y = "% of Total Requests Made from Web Platform"
 	)
 
 data_temp %>% 
@@ -5503,7 +5503,7 @@ data_temp %>%
 		title = paste("How Racial Composition is Related To Web Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\ndo not have a relatively high Asian population.",
 		y = "% of the Population that is Asian, Non-White",
-		x = "% of Total Requests Made from Mobile App"
+		x = "% of Total Requests Made from Web Platform"
 	)
 ```
 
@@ -5527,7 +5527,7 @@ data_temp %>%
 		title = paste("How Income Is Related To Web Usage For\n", request_name),
 		subtitle = "We see that wealthier census block groups tend to make requests via\nthe mobile app less frequently than poorer blocks.",
 		x = "Median Income of Census Census Block Group",
-		y = "% of Total Requests Made from Mobile App"
+		y = "% of Total Requests Made from Web Platform"
 	)
 
 data_temp %>% 
@@ -5537,7 +5537,7 @@ data_temp %>%
 		title = paste("How Income Is Related To Web Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to be relatively less wealthy.",
 		y = "Median Income of Census Census Block Group",
-		x = "% of Total Requests Made from Mobile App"
+		x = "% of Total Requests Made from Web Platform"
 	)
 ```
 
@@ -5561,7 +5561,7 @@ data_temp %>%
 		title = paste("How Cellular Connectivity is Related To Web Usage For\n", request_name),
 		subtitle = "We see that cellular connectivity does not particularly relate with propensity to submit requests via mobile app.",
 		x = "% of the Population With a Cellular Data Subscription",
-		y = "% of Total Requests Made from Mobile App"
+		y = "% of Total Requests Made from Web Platform"
 	)
 
 data_temp %>% 
@@ -5571,7 +5571,7 @@ data_temp %>%
 		title = paste("How Cellular Connectivity is Related To Web Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\ndo not see a very strong relationship with cellular connectivity.",
 		y = "% of the Population With a Cellular Data Subscription",
-		x = "% of Total Requests Made from Mobile App"
+		x = "% of Total Requests Made from Web Platform"
 	)
 ```
 
@@ -5595,7 +5595,7 @@ data_temp %>%
 		title = paste("How Internet Connectivity is Related To Web Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher internet-connected population\nsubmit a lower proportion of requests via mobile app.",
 		x = "% of the Population With a Broadband Subscription",
-		y = "% of Total Requests Made from Mobile App"
+		y = "% of Total Requests Made from Web Platform"
 	)
 
 data_temp %>% 
@@ -5605,7 +5605,7 @@ data_temp %>%
 		title = paste("How Internet Connectivity is Related To Web Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nare less connected to the internet via broadband service.",
 		y = "% of the Population With a\nBroadband Subscription",
-		x = "% of Total Requests Made from Mobile App"
+		x = "% of Total Requests Made from Web Platform"
 	)
 ```
 
@@ -5639,7 +5639,7 @@ data_temp %>%
 			paste("How English Comprehension Is Related To Web Usage\nFor", request_name),
 		subtitle = "We see that non English-speaking households may use the mobile app\nslightly more frequently than English-speaking households.",
 		x = "Linguistic Isolation (% of Households in a Census Tract)",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -5649,7 +5649,7 @@ data_temp %>%
 		title = 
 			paste("How English Comprehension Is Related To Web Usage\nFor", request_name),
 		y = "Linguistic Isolation\n(% of Households in a Census Tract)",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 ```
 
@@ -5671,7 +5671,7 @@ data_temp %>%
 		title = paste("How Age Is Related To Web Usage For\n", request_name),
 		subtitle = "We see that younger census block groups tend to make requests via\nthe mobile app more frequently than older blocks.",
 		x = "Median Age of Census Census Block Group",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -5680,7 +5680,7 @@ data_temp %>%
 		title = paste("How Age Is Related To Web Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to be slightly younger.",
 		y = "Median Age of Census Census Block Group",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 ```
 
@@ -5704,7 +5704,7 @@ data_temp %>%
 		title = paste("How College Education Is Related To Web Usage For\n", request_name),
 		subtitle = "Request volume seems to increase in less educated census group blocks.\nThis may be confounded with other variables.",
 		x = "% of the Census Block Group Over 25 With a College Degree",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -5714,7 +5714,7 @@ data_temp %>%
 		title = paste("How College Education Is Related To Web Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to contain fewer college-educated residents.",
 		y = "% of the Census Block Group Over 25\nWith a College Degree",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 ```
 
@@ -5738,7 +5738,7 @@ data_temp %>%
 		title = paste("How Home Ownership Is Related To Web Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher proportion of owner-occupied\nunits, mobile app usage is smaller.",
 		x = "% of the Homes Occupied by Owners",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -5748,7 +5748,7 @@ data_temp %>%
 		title = paste("How Home Ownership Is Related To Web Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to contain less owner-occupied units.",
 		y = "% of the Homes Occupied by Owners",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 # Home Renting
@@ -5768,7 +5768,7 @@ data_temp %>%
 		title = paste("How Home Renting Is Related To Web Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher proportion of renter-occupied\nunits also submit a higher proportion of requests via mobile app.",
 		x = "% of the Homes Occupied by Renters",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -5778,7 +5778,7 @@ data_temp %>%
 		title = paste("How Home Ownership Is Related To Web Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to contain more renter-occupied units.",
 		y = "% of the Homes Occupied by Renters",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 ```
 
@@ -5801,7 +5801,7 @@ data_temp %>%
 	labs(
 		title = paste("How Racial Composition is Related To Web Usage For\n", request_name),
 		x = "% of the Population that is White, Non-Hispanic",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -5810,7 +5810,7 @@ data_temp %>%
 	labs(
 		title = paste("How Racial Composition is Related To Web Usage For\n", request_name),
 		y = "% of the Population that is White, Non-Hispanic",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 # Race/Ethnicity - Hispanic
@@ -5830,7 +5830,7 @@ data_temp %>%
 		title = paste("How Racial Composition is Related To Web Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher Hispanic population\nalso submit a higher proportion of requests via mobile app.",
 		x = "% of the Population that is Hispanic, Non-White",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -5840,7 +5840,7 @@ data_temp %>%
 		title = paste("How Racial Composition is Related To Web Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nhave a relatively higher Hispanic population.",
 		y = "% of the Population that is Hispanic, Non-White",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 # Race/Ethnicity - Asian
@@ -5860,7 +5860,7 @@ data_temp %>%
 		title = paste("How Racial Composition is Related To Web Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher Asian population\nsubmit a lower proportion of requests via mobile app.",
 		x = "% of the Population that is Asian, Non-White",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -5870,7 +5870,7 @@ data_temp %>%
 		title = paste("How Racial Composition is Related To Web Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\ndo not have a relatively high Asian population.",
 		y = "% of the Population that is Asian, Non-White",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 ```
 
@@ -5894,7 +5894,7 @@ data_temp %>%
 		title = paste("How Income Is Related To Web Usage For\n", request_name),
 		subtitle = "We see that wealthier census block groups tend to make requests via\nthe mobile app less frequently than poorer blocks.",
 		x = "Median Income of Census Census Block Group",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -5904,7 +5904,7 @@ data_temp %>%
 		title = paste("How Income Is Related To Web Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to be relatively less wealthy.",
 		y = "Median Income of Census Census Block Group",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 ```
 
@@ -5928,7 +5928,7 @@ data_temp %>%
 		title = paste("How Cellular Connectivity is Related To Web Usage For\n", request_name),
 		subtitle = "We see that cellular connectivity does not particularly relate with propensity to submit requests via mobile app.",
 		x = "% of the Population With a Cellular Data Subscription",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -5938,7 +5938,7 @@ data_temp %>%
 		title = paste("How Cellular Connectivity is Related To Web Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\ndo not see a very strong relationship with cellular connectivity.",
 		y = "% of the Population With a Cellular Data Subscription",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 ```
 
@@ -5962,7 +5962,7 @@ data_temp %>%
 		title = paste("How Internet Connectivity is Related To Web Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher internet-connected population\nsubmit a lower proportion of requests via mobile app.",
 		x = "% of the Population With a Broadband Subscription",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -5972,7 +5972,7 @@ data_temp %>%
 		title = paste("How Internet Connectivity is Related To Web Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nare less connected to the internet via broadband service.",
 		y = "% of the Population With a\nBroadband Subscription",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 ```
 
@@ -6006,7 +6006,7 @@ data_temp %>%
 			paste("How English Comprehension Is Related To Web Usage\nFor", request_name),
 		subtitle = "We see that non English-speaking households may use the mobile app\nslightly more frequently than English-speaking households.",
 		x = "Linguistic Isolation (% of Households in a Census Tract)",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -6016,7 +6016,7 @@ data_temp %>%
 		title = 
 			paste("How English Comprehension Is Related To Web Usage\nFor", request_name),
 		y = "Linguistic Isolation\n(% of Households in a Census Tract)",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 ```
 
@@ -6038,7 +6038,7 @@ data_temp %>%
 		title = paste("How Age Is Related To Web Usage For\n", request_name),
 		subtitle = "We see that younger census block groups tend to make requests via\nthe mobile app more frequently than older blocks.",
 		x = "Median Age of Census Census Block Group",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -6047,7 +6047,7 @@ data_temp %>%
 		title = paste("How Age Is Related To Web Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to be slightly younger.",
 		y = "Median Age of Census Census Block Group",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 ```
 
@@ -6071,7 +6071,7 @@ data_temp %>%
 		title = paste("How College Education Is Related To Web Usage For\n", request_name),
 		subtitle = "Request volume seems to increase in less educated census group blocks.\nThis may be confounded with other variables.",
 		x = "% of the Census Block Group Over 25 With a College Degree",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -6081,7 +6081,7 @@ data_temp %>%
 		title = paste("How College Education Is Related To Web Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to contain fewer college-educated residents.",
 		y = "% of the Census Block Group Over 25\nWith a College Degree",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 ```
 
@@ -6105,7 +6105,7 @@ data_temp %>%
 		title = paste("How Home Ownership Is Related To Web Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher proportion of owner-occupied\nunits, mobile app usage is smaller.",
 		x = "% of the Homes Occupied by Owners",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -6115,7 +6115,7 @@ data_temp %>%
 		title = paste("How Home Ownership Is Related To Web Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to contain less owner-occupied units.",
 		y = "% of the Homes Occupied by Owners",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 # Home Renting
@@ -6135,7 +6135,7 @@ data_temp %>%
 		title = paste("How Home Renting Is Related To Web Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher proportion of renter-occupied\nunits also submit a higher proportion of requests via mobile app.",
 		x = "% of the Homes Occupied by Renters",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -6145,7 +6145,7 @@ data_temp %>%
 		title = paste("How Home Ownership Is Related To Web Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to contain more renter-occupied units.",
 		y = "% of the Homes Occupied by Renters",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 ```
 
@@ -6168,7 +6168,7 @@ data_temp %>%
 	labs(
 		title = paste("How Racial Composition is Related To Web Usage For\n", request_name),
 		x = "% of the Population that is White, Non-Hispanic",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -6177,7 +6177,7 @@ data_temp %>%
 	labs(
 		title = paste("How Racial Composition is Related To Web Usage For\n", request_name),
 		y = "% of the Population that is White, Non-Hispanic",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 # Race/Ethnicity - Hispanic
@@ -6197,7 +6197,7 @@ data_temp %>%
 		title = paste("How Racial Composition is Related To Web Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher Hispanic population\nalso submit a higher proportion of requests via mobile app.",
 		x = "% of the Population that is Hispanic, Non-White",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -6207,7 +6207,7 @@ data_temp %>%
 		title = paste("How Racial Composition is Related To Web Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nhave a relatively higher Hispanic population.",
 		y = "% of the Population that is Hispanic, Non-White",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 # Race/Ethnicity - Asian
@@ -6227,7 +6227,7 @@ data_temp %>%
 		title = paste("How Racial Composition is Related To Web Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher Asian population\nsubmit a lower proportion of requests via mobile app.",
 		x = "% of the Population that is Asian, Non-White",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -6237,7 +6237,7 @@ data_temp %>%
 		title = paste("How Racial Composition is Related To Web Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\ndo not have a relatively high Asian population.",
 		y = "% of the Population that is Asian, Non-White",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 ```
 
@@ -6261,7 +6261,7 @@ data_temp %>%
 		title = paste("How Income Is Related To Web Usage For\n", request_name),
 		subtitle = "We see that wealthier census block groups tend to make requests via\nthe mobile app less frequently than poorer blocks.",
 		x = "Median Income of Census Census Block Group",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -6271,7 +6271,7 @@ data_temp %>%
 		title = paste("How Income Is Related To Web Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to be relatively less wealthy.",
 		y = "Median Income of Census Census Block Group",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 ```
 
@@ -6295,7 +6295,7 @@ data_temp %>%
 		title = paste("How Cellular Connectivity is Related To Web Usage For\n", request_name),
 		subtitle = "We see that cellular connectivity does not particularly relate with propensity to submit requests via mobile app.",
 		x = "% of the Population With a Cellular Data Subscription",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -6305,7 +6305,7 @@ data_temp %>%
 		title = paste("How Cellular Connectivity is Related To Web Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\ndo not see a very strong relationship with cellular connectivity.",
 		y = "% of the Population With a Cellular Data Subscription",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 ```
 
@@ -6329,7 +6329,7 @@ data_temp %>%
 		title = paste("How Internet Connectivity is Related To Web Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher internet-connected population\nsubmit a lower proportion of requests via mobile app.",
 		x = "% of the Population With a Broadband Subscription",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -6339,7 +6339,7 @@ data_temp %>%
 		title = paste("How Internet Connectivity is Related To Web Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nare less connected to the internet via broadband service.",
 		y = "% of the Population With a\nBroadband Subscription",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 ```
 
@@ -6373,7 +6373,7 @@ data_temp %>%
 			paste("How English Comprehension Is Related To Web Usage\nFor", request_name),
 		subtitle = "We see that non English-speaking households may use the mobile app\nslightly more frequently than English-speaking households.",
 		x = "Linguistic Isolation (% of Households in a Census Tract)",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -6383,7 +6383,7 @@ data_temp %>%
 		title = 
 			paste("How English Comprehension Is Related To Web Usage\nFor", request_name),
 		y = "Linguistic Isolation\n(% of Households in a Census Tract)",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 ```
 
@@ -6405,7 +6405,7 @@ data_temp %>%
 		title = paste("How Age Is Related To Web Usage For\n", request_name),
 		subtitle = "We see that younger census block groups tend to make requests via\nthe mobile app more frequently than older blocks.",
 		x = "Median Age of Census Census Block Group",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -6414,7 +6414,7 @@ data_temp %>%
 		title = paste("How Age Is Related To Web Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to be slightly younger.",
 		y = "Median Age of Census Census Block Group",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 ```
 
@@ -6438,7 +6438,7 @@ data_temp %>%
 		title = paste("How College Education Is Related To Web Usage For\n", request_name),
 		subtitle = "Request volume seems to increase in less educated census group blocks.\nThis may be confounded with other variables.",
 		x = "% of the Census Block Group Over 25 With a College Degree",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -6448,7 +6448,7 @@ data_temp %>%
 		title = paste("How College Education Is Related To Web Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to contain fewer college-educated residents.",
 		y = "% of the Census Block Group Over 25\nWith a College Degree",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 ```
 
@@ -6472,7 +6472,7 @@ data_temp %>%
 		title = paste("How Home Ownership Is Related To Web Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher proportion of owner-occupied\nunits, mobile app usage is smaller.",
 		x = "% of the Homes Occupied by Owners",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -6482,7 +6482,7 @@ data_temp %>%
 		title = paste("How Home Ownership Is Related To Web Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to contain less owner-occupied units.",
 		y = "% of the Homes Occupied by Owners",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 # Home Renting
@@ -6502,7 +6502,7 @@ data_temp %>%
 		title = paste("How Home Renting Is Related To Web Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher proportion of renter-occupied\nunits also submit a higher proportion of requests via mobile app.",
 		x = "% of the Homes Occupied by Renters",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -6512,7 +6512,7 @@ data_temp %>%
 		title = paste("How Home Ownership Is Related To Web Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to contain more renter-occupied units.",
 		y = "% of the Homes Occupied by Renters",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 ```
 
@@ -6535,7 +6535,7 @@ data_temp %>%
 	labs(
 		title = paste("How Racial Composition is Related To Web Usage For\n", request_name),
 		x = "% of the Population that is White, Non-Hispanic",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -6544,7 +6544,7 @@ data_temp %>%
 	labs(
 		title = paste("How Racial Composition is Related To Web Usage For\n", request_name),
 		y = "% of the Population that is White, Non-Hispanic",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 # Race/Ethnicity - Hispanic
@@ -6564,7 +6564,7 @@ data_temp %>%
 		title = paste("How Racial Composition is Related To Web Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher Hispanic population\nalso submit a higher proportion of requests via mobile app.",
 		x = "% of the Population that is Hispanic, Non-White",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -6574,7 +6574,7 @@ data_temp %>%
 		title = paste("How Racial Composition is Related To Web Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nhave a relatively higher Hispanic population.",
 		y = "% of the Population that is Hispanic, Non-White",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 # Race/Ethnicity - Asian
@@ -6594,7 +6594,7 @@ data_temp %>%
 		title = paste("How Racial Composition is Related To Web Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher Asian population\nsubmit a lower proportion of requests via mobile app.",
 		x = "% of the Population that is Asian, Non-White",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -6604,7 +6604,7 @@ data_temp %>%
 		title = paste("How Racial Composition is Related To Web Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\ndo not have a relatively high Asian population.",
 		y = "% of the Population that is Asian, Non-White",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 ```
 
@@ -6628,7 +6628,7 @@ data_temp %>%
 		title = paste("How Income Is Related To Web Usage For\n", request_name),
 		subtitle = "We see that wealthier census block groups tend to make requests via\nthe mobile app less frequently than poorer blocks.",
 		x = "Median Income of Census Census Block Group",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -6638,7 +6638,7 @@ data_temp %>%
 		title = paste("How Income Is Related To Web Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to be relatively less wealthy.",
 		y = "Median Income of Census Census Block Group",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 ```
 
@@ -6662,7 +6662,7 @@ data_temp %>%
 		title = paste("How Cellular Connectivity is Related To Web Usage For\n", request_name),
 		subtitle = "We see that cellular connectivity does not particularly relate with propensity to submit requests via mobile app.",
 		x = "% of the Population With a Cellular Data Subscription",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -6672,7 +6672,7 @@ data_temp %>%
 		title = paste("How Cellular Connectivity is Related To Web Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\ndo not see a very strong relationship with cellular connectivity.",
 		y = "% of the Population With a Cellular Data Subscription",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 ```
 
@@ -6696,7 +6696,7 @@ data_temp %>%
 		title = paste("How Internet Connectivity is Related To Web Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher internet-connected population\nsubmit a lower proportion of requests via mobile app.",
 		x = "% of the Population With a Broadband Subscription",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -6706,7 +6706,7 @@ data_temp %>%
 		title = paste("How Internet Connectivity is Related To Web Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nare less connected to the internet via broadband service.",
 		y = "% of the Population With a\nBroadband Subscription",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 ```
 
@@ -6740,7 +6740,7 @@ data_temp %>%
 			paste("How English Comprehension Is Related To Web Usage\nFor", request_name),
 		subtitle = "We see that non English-speaking households may use the mobile app\nslightly more frequently than English-speaking households.",
 		x = "Linguistic Isolation (% of Households in a Census Tract)",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -6750,7 +6750,7 @@ data_temp %>%
 		title = 
 			paste("How English Comprehension Is Related To Web Usage\nFor", request_name),
 		y = "Linguistic Isolation\n(% of Households in a Census Tract)",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 ```
 
@@ -6772,7 +6772,7 @@ data_temp %>%
 		title = paste("How Age Is Related To Web Usage For\n", request_name),
 		subtitle = "We see that younger census block groups tend to make requests via\nthe mobile app more frequently than older blocks.",
 		x = "Median Age of Census Census Block Group",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -6781,7 +6781,7 @@ data_temp %>%
 		title = paste("How Age Is Related To Web Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to be slightly younger.",
 		y = "Median Age of Census Census Block Group",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 ```
 
@@ -6805,7 +6805,7 @@ data_temp %>%
 		title = paste("How College Education Is Related To Web Usage For\n", request_name),
 		subtitle = "Request volume seems to increase in less educated census group blocks.\nThis may be confounded with other variables.",
 		x = "% of the Census Block Group Over 25 With a College Degree",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -6815,7 +6815,7 @@ data_temp %>%
 		title = paste("How College Education Is Related To Web Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to contain fewer college-educated residents.",
 		y = "% of the Census Block Group Over 25\nWith a College Degree",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 ```
 
@@ -6839,7 +6839,7 @@ data_temp %>%
 		title = paste("How Home Ownership Is Related To Web Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher proportion of owner-occupied\nunits, mobile app usage is smaller.",
 		x = "% of the Homes Occupied by Owners",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -6849,7 +6849,7 @@ data_temp %>%
 		title = paste("How Home Ownership Is Related To Web Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to contain less owner-occupied units.",
 		y = "% of the Homes Occupied by Owners",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 # Home Renting
@@ -6869,7 +6869,7 @@ data_temp %>%
 		title = paste("How Home Renting Is Related To Web Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher proportion of renter-occupied\nunits also submit a higher proportion of requests via mobile app.",
 		x = "% of the Homes Occupied by Renters",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -6879,7 +6879,7 @@ data_temp %>%
 		title = paste("How Home Ownership Is Related To Web Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to contain more renter-occupied units.",
 		y = "% of the Homes Occupied by Renters",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 ```
 
@@ -6902,7 +6902,7 @@ data_temp %>%
 	labs(
 		title = paste("How Racial Composition is Related To Web Usage For\n", request_name),
 		x = "% of the Population that is White, Non-Hispanic",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -6911,7 +6911,7 @@ data_temp %>%
 	labs(
 		title = paste("How Racial Composition is Related To Web Usage For\n", request_name),
 		y = "% of the Population that is White, Non-Hispanic",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 # Race/Ethnicity - Hispanic
@@ -6931,7 +6931,7 @@ data_temp %>%
 		title = paste("How Racial Composition is Related To Web Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher Hispanic population\nalso submit a higher proportion of requests via mobile app.",
 		x = "% of the Population that is Hispanic, Non-White",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -6941,7 +6941,7 @@ data_temp %>%
 		title = paste("How Racial Composition is Related To Web Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nhave a relatively higher Hispanic population.",
 		y = "% of the Population that is Hispanic, Non-White",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 # Race/Ethnicity - Asian
@@ -6961,7 +6961,7 @@ data_temp %>%
 		title = paste("How Racial Composition is Related To Web Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher Asian population\nsubmit a lower proportion of requests via mobile app.",
 		x = "% of the Population that is Asian, Non-White",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -6971,7 +6971,7 @@ data_temp %>%
 		title = paste("How Racial Composition is Related To Web Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\ndo not have a relatively high Asian population.",
 		y = "% of the Population that is Asian, Non-White",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 ```
 
@@ -6995,7 +6995,7 @@ data_temp %>%
 		title = paste("How Income Is Related To Web Usage For\n", request_name),
 		subtitle = "We see that wealthier census block groups tend to make requests via\nthe mobile app less frequently than poorer blocks.",
 		x = "Median Income of Census Census Block Group",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -7005,7 +7005,7 @@ data_temp %>%
 		title = paste("How Income Is Related To Web Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to be relatively less wealthy.",
 		y = "Median Income of Census Census Block Group",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 ```
 
@@ -7029,7 +7029,7 @@ data_temp %>%
 		title = paste("How Cellular Connectivity is Related To Web Usage For\n", request_name),
 		subtitle = "We see that cellular connectivity does not particularly relate with propensity to submit requests via mobile app.",
 		x = "% of the Population With a Cellular Data Subscription",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -7039,7 +7039,7 @@ data_temp %>%
 		title = paste("How Cellular Connectivity is Related To Web Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\ndo not see a very strong relationship with cellular connectivity.",
 		y = "% of the Population With a Cellular Data Subscription",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 ```
 
@@ -7063,7 +7063,7 @@ data_temp %>%
 		title = paste("How Internet Connectivity is Related To Web Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher internet-connected population\nsubmit a lower proportion of requests via mobile app.",
 		x = "% of the Population With a Broadband Subscription",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -7073,7 +7073,7 @@ data_temp %>%
 		title = paste("How Internet Connectivity is Related To Web Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nare less connected to the internet via broadband service.",
 		y = "% of the Population With a\nBroadband Subscription",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 ```
 
@@ -7107,7 +7107,7 @@ data_temp %>%
 			paste("How English Comprehension Is Related To Web Usage\nFor", request_name),
 		subtitle = "We see that non English-speaking households may use the mobile app\nslightly more frequently than English-speaking households.",
 		x = "Linguistic Isolation (% of Households in a Census Tract)",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -7117,7 +7117,7 @@ data_temp %>%
 		title = 
 			paste("How English Comprehension Is Related To Web Usage\nFor", request_name),
 		y = "Linguistic Isolation\n(% of Households in a Census Tract)",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 ```
 
@@ -7139,7 +7139,7 @@ data_temp %>%
 		title = paste("How Age Is Related To Web Usage For\n", request_name),
 		subtitle = "We see that younger census block groups tend to make requests via\nthe mobile app more frequently than older blocks.",
 		x = "Median Age of Census Census Block Group",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -7148,7 +7148,7 @@ data_temp %>%
 		title = paste("How Age Is Related To Web Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to be slightly younger.",
 		y = "Median Age of Census Census Block Group",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 ```
 
@@ -7172,7 +7172,7 @@ data_temp %>%
 		title = paste("How College Education Is Related To Web Usage For\n", request_name),
 		subtitle = "Request volume seems to increase in less educated census group blocks.\nThis may be confounded with other variables.",
 		x = "% of the Census Block Group Over 25 With a College Degree",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -7182,7 +7182,7 @@ data_temp %>%
 		title = paste("How College Education Is Related To Web Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to contain fewer college-educated residents.",
 		y = "% of the Census Block Group Over 25\nWith a College Degree",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 ```
 
@@ -7206,7 +7206,7 @@ data_temp %>%
 		title = paste("How Home Ownership Is Related To Web Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher proportion of owner-occupied\nunits, mobile app usage is smaller.",
 		x = "% of the Homes Occupied by Owners",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -7216,7 +7216,7 @@ data_temp %>%
 		title = paste("How Home Ownership Is Related To Web Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to contain less owner-occupied units.",
 		y = "% of the Homes Occupied by Owners",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 # Home Renting
@@ -7236,7 +7236,7 @@ data_temp %>%
 		title = paste("How Home Renting Is Related To Web Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher proportion of renter-occupied\nunits also submit a higher proportion of requests via mobile app.",
 		x = "% of the Homes Occupied by Renters",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -7246,7 +7246,7 @@ data_temp %>%
 		title = paste("How Home Ownership Is Related To Web Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to contain more renter-occupied units.",
 		y = "% of the Homes Occupied by Renters",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 ```
 
@@ -7269,7 +7269,7 @@ data_temp %>%
 	labs(
 		title = paste("How Racial Composition is Related To Web Usage For\n", request_name),
 		x = "% of the Population that is White, Non-Hispanic",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -7278,7 +7278,7 @@ data_temp %>%
 	labs(
 		title = paste("How Racial Composition is Related To Web Usage For\n", request_name),
 		y = "% of the Population that is White, Non-Hispanic",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 # Race/Ethnicity - Hispanic
@@ -7298,7 +7298,7 @@ data_temp %>%
 		title = paste("How Racial Composition is Related To Web Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher Hispanic population\nalso submit a higher proportion of requests via mobile app.",
 		x = "% of the Population that is Hispanic, Non-White",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -7308,7 +7308,7 @@ data_temp %>%
 		title = paste("How Racial Composition is Related To Web Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nhave a relatively higher Hispanic population.",
 		y = "% of the Population that is Hispanic, Non-White",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 # Race/Ethnicity - Asian
@@ -7328,7 +7328,7 @@ data_temp %>%
 		title = paste("How Racial Composition is Related To Web Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher Asian population\nsubmit a lower proportion of requests via mobile app.",
 		x = "% of the Population that is Asian, Non-White",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -7338,7 +7338,7 @@ data_temp %>%
 		title = paste("How Racial Composition is Related To Web Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\ndo not have a relatively high Asian population.",
 		y = "% of the Population that is Asian, Non-White",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 ```
 
@@ -7362,7 +7362,7 @@ data_temp %>%
 		title = paste("How Income Is Related To Web Usage For\n", request_name),
 		subtitle = "We see that wealthier census block groups tend to make requests via\nthe mobile app less frequently than poorer blocks.",
 		x = "Median Income of Census Census Block Group",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -7372,7 +7372,7 @@ data_temp %>%
 		title = paste("How Income Is Related To Web Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to be relatively less wealthy.",
 		y = "Median Income of Census Census Block Group",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 ```
 
@@ -7396,7 +7396,7 @@ data_temp %>%
 		title = paste("How Cellular Connectivity is Related To Web Usage For\n", request_name),
 		subtitle = "We see that cellular connectivity does not particularly relate with propensity to submit requests via mobile app.",
 		x = "% of the Population With a Cellular Data Subscription",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -7406,7 +7406,7 @@ data_temp %>%
 		title = paste("How Cellular Connectivity is Related To Web Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\ndo not see a very strong relationship with cellular connectivity.",
 		y = "% of the Population With a Cellular Data Subscription",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 ```
 
@@ -7430,7 +7430,7 @@ data_temp %>%
 		title = paste("How Internet Connectivity is Related To Web Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher internet-connected population\nsubmit a lower proportion of requests via mobile app.",
 		x = "% of the Population With a Broadband Subscription",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -7440,7 +7440,7 @@ data_temp %>%
 		title = paste("How Internet Connectivity is Related To Web Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nare less connected to the internet via broadband service.",
 		y = "% of the Population With a\nBroadband Subscription",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 ```
 
@@ -7474,7 +7474,7 @@ data_temp %>%
 			paste("How English Comprehension Is Related To Web Usage\nFor", request_name),
 		subtitle = "We see that non English-speaking households may use the mobile app\nslightly more frequently than English-speaking households.",
 		x = "Linguistic Isolation (% of Households in a Census Tract)",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -7484,7 +7484,7 @@ data_temp %>%
 		title = 
 			paste("How English Comprehension Is Related To Web Usage\nFor", request_name),
 		y = "Linguistic Isolation\n(% of Households in a Census Tract)",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 ```
 
@@ -7506,7 +7506,7 @@ data_temp %>%
 		title = paste("How Age Is Related To Web Usage For\n", request_name),
 		subtitle = "We see that younger census block groups tend to make requests via\nthe mobile app more frequently than older blocks.",
 		x = "Median Age of Census Census Block Group",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -7515,7 +7515,7 @@ data_temp %>%
 		title = paste("How Age Is Related To Web Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to be slightly younger.",
 		y = "Median Age of Census Census Block Group",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 ```
 
@@ -7539,7 +7539,7 @@ data_temp %>%
 		title = paste("How College Education Is Related To Web Usage For\n", request_name),
 		subtitle = "Request volume seems to increase in less educated census group blocks.\nThis may be confounded with other variables.",
 		x = "% of the Census Block Group Over 25 With a College Degree",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -7549,7 +7549,7 @@ data_temp %>%
 		title = paste("How College Education Is Related To Web Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to contain fewer college-educated residents.",
 		y = "% of the Census Block Group Over 25\nWith a College Degree",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 ```
 
@@ -7573,7 +7573,7 @@ data_temp %>%
 		title = paste("How Home Ownership Is Related To Web Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher proportion of owner-occupied\nunits, mobile app usage is smaller.",
 		x = "% of the Homes Occupied by Owners",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -7583,7 +7583,7 @@ data_temp %>%
 		title = paste("How Home Ownership Is Related To Web Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to contain less owner-occupied units.",
 		y = "% of the Homes Occupied by Owners",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 # Home Renting
@@ -7603,7 +7603,7 @@ data_temp %>%
 		title = paste("How Home Renting Is Related To Web Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher proportion of renter-occupied\nunits also submit a higher proportion of requests via mobile app.",
 		x = "% of the Homes Occupied by Renters",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -7613,7 +7613,7 @@ data_temp %>%
 		title = paste("How Home Ownership Is Related To Web Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to contain more renter-occupied units.",
 		y = "% of the Homes Occupied by Renters",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 ```
 
@@ -7636,7 +7636,7 @@ data_temp %>%
 	labs(
 		title = paste("How Racial Composition is Related To Web Usage For\n", request_name),
 		x = "% of the Population that is White, Non-Hispanic",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -7645,7 +7645,7 @@ data_temp %>%
 	labs(
 		title = paste("How Racial Composition is Related To Web Usage For\n", request_name),
 		y = "% of the Population that is White, Non-Hispanic",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 # Race/Ethnicity - Hispanic
@@ -7665,7 +7665,7 @@ data_temp %>%
 		title = paste("How Racial Composition is Related To Web Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher Hispanic population\nalso submit a higher proportion of requests via mobile app.",
 		x = "% of the Population that is Hispanic, Non-White",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -7675,7 +7675,7 @@ data_temp %>%
 		title = paste("How Racial Composition is Related To Web Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nhave a relatively higher Hispanic population.",
 		y = "% of the Population that is Hispanic, Non-White",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 # Race/Ethnicity - Asian
@@ -7695,7 +7695,7 @@ data_temp %>%
 		title = paste("How Racial Composition is Related To Web Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher Asian population\nsubmit a lower proportion of requests via mobile app.",
 		x = "% of the Population that is Asian, Non-White",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -7705,7 +7705,7 @@ data_temp %>%
 		title = paste("How Racial Composition is Related To Web Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\ndo not have a relatively high Asian population.",
 		y = "% of the Population that is Asian, Non-White",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 ```
 
@@ -7729,7 +7729,7 @@ data_temp %>%
 		title = paste("How Income Is Related To Web Usage For\n", request_name),
 		subtitle = "We see that wealthier census block groups tend to make requests via\nthe mobile app less frequently than poorer blocks.",
 		x = "Median Income of Census Census Block Group",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -7739,7 +7739,7 @@ data_temp %>%
 		title = paste("How Income Is Related To Web Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nappear to be relatively less wealthy.",
 		y = "Median Income of Census Census Block Group",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 ```
 
@@ -7763,7 +7763,7 @@ data_temp %>%
 		title = paste("How Cellular Connectivity is Related To Web Usage For\n", request_name),
 		subtitle = "We see that cellular connectivity does not particularly relate with propensity to submit requests via mobile app.",
 		x = "% of the Population With a Cellular Data Subscription",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -7773,7 +7773,7 @@ data_temp %>%
 		title = paste("How Cellular Connectivity is Related To Web Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\ndo not see a very strong relationship with cellular connectivity.",
 		y = "% of the Population With a Cellular Data Subscription",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 ```
 
@@ -7797,7 +7797,7 @@ data_temp %>%
 		title = paste("How Internet Connectivity is Related To Web Usage For\n", request_name),
 		subtitle = "We see that census block groups with a higher internet-connected population\nsubmit a lower proportion of requests via mobile app.",
 		x = "% of the Population With a Broadband Subscription",
-		y = paste("% of", request_name, "\nMade from Mobile App") 
+		y = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 
 data_temp %>% 
@@ -7807,6 +7807,6 @@ data_temp %>%
 		title = paste("How Internet Connectivity is Related To Web Usage For\n", request_name),
 		subtitle = "Census block groups with a higher proportion of requests coming from mobile,\nare less connected to the internet via broadband service.",
 		y = "% of the Population With a\nBroadband Subscription",
-		x = paste("% of", request_name, "\nMade from Mobile App") 
+		x = paste("% of", request_name, "\nMade from Web Platform") 
 	)
 ```
