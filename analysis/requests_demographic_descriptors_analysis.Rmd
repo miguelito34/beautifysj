@@ -1,0 +1,329 @@
+---
+title: "BeautifySJ Requests Demographic Descriptors Analysis"
+author: "Michael Spencer, Barbara Cardona, Guillermo Camarillo, Jorge Nam Song"
+date: "2/26/2020"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, include=FALSE}
+## Setup
+
+### Libraries
+if (!require(tidycensus)) install.packages("tidycensus")
+library(tidycensus)
+
+if (!require(sf)) install.packages("sf")
+library(sf)
+
+if (!require(lubridate)) install.packages("lubridate")
+library(lubridate)
+
+if (!require(tidyverse)) install.packages("tidyverse")
+library(tidyverse)
+
+### Parameters
+write_my_files <- "no" # Change this if you would like fresh data files downloaded
+keep_geometry <- "no" # Change this if you plan on mapping the data here in R
+vars_of_interest <- c(
+	"linguistic_isolation_(percent_households)",
+	"bg_ed_percent_college_educated",
+	"bg_med_age",
+	"bg_percent_prop_households_owner_occ",
+	"bg_percent_prop_households_renter_occ",
+	"bg_pop_percent_white",
+	"bg_pop_percent_hispanic",
+	"bg_pop_percent_asian",
+	"bg_med_income",
+	"cellular_data_subscription_(percent_of_pop)",
+	"broadband_subscription_(percent_of_pop)"
+)
+
+
+### Source Data
+source("../scripts/support/support_functions.R")
+source("../scripts/data/final_clean.R")
+```
+
+## Summary Tables & Charts
+```{r, echo=FALSE, warning=FALSE}
+data_requests %>% 
+	count(incident_source, sort = TRUE) %>% 
+	mutate(percent_of_total = (n/sum(n)) %>% round(digits = 4))
+
+data_requests %>% 
+	count(service_requested, sort = TRUE) %>% 
+	mutate(percent_of_total = (n/sum(n)) %>% round(digits = 4))
+
+data_requests %>% 
+	group_by(incident_source, service_requested) %>% 
+	summarise(n = n()) %>% 
+	mutate(percent_of_source = (n/sum(n)) %>% round(digits = 4)) %>% 
+	arrange(incident_source, desc(percent_of_source)) %>% 
+	ungroup() %>% 
+	mutate(percent_of_total = (n/sum(n)) %>% round(digits = 4))
+ 
+data_requests %>% 
+	count(request_creation_weekday, sort = TRUE) %>% 
+	mutate(percent_of_total = (n/sum(n)) %>% round(digits = 4))
+
+data_requests %>% 
+	count(san_jose_council_district, sort = TRUE) %>% 
+	mutate(percent_of_total = (n/sum(n)) %>% round(digits = 4))
+
+data_requests %>% 
+	count(census_block_id, sort = TRUE) %>% 
+	mutate(percent_of_total = (n/sum(n)) %>% round(digits = 4)) %>% 
+	top_n(10, wt = percent_of_total)
+```
+
+```{r, echo=FALSE, warning=FALSE}
+data_requests %>% 
+	count(census_block_id, sort = TRUE) %>% 
+	mutate(percent_of_total = (n/sum(n)) %>% round(digits = 4)) %>% 
+	ggplot(aes(x = percent_of_total)) +
+	geom_histogram(bins = 30, color = "black", fill = "white") +
+	scale_x_continuous(labels = scales::percent_format()) +
+	theme_minimal() +
+	labs(
+		title = "Distribution of Requests Across Census Block Groups",
+		subtitle = "The distribution is right skewed, indicating that a handful of block groups\nrecieve a larger amount of requests than most others.",
+		x = "Percent of Total Requests",
+		y = "Count",
+		caption = "Source: City of San Jose"
+	)
+```
+
+\newpage
+## Demographic Descriptors By Channel and Request Type
+
+\newpage
+### All Requests
+
+#### All MySanJose Platforms
+
+```{r, echo=FALSE, warning=FALSE, out.height='50%', out.width='50%'}
+data_requests %>% 
+	gather_data() %>% 
+	find_demographic_descriptors() %>% 
+	knitr::kable()
+```
+
+#### MySanJose Mobile App
+```{r, echo=FALSE, warning=FALSE, out.height='50%', out.width='50%'}
+data_requests %>% 
+	gather_data(request_source = "Mobile") %>% 
+	find_demographic_descriptors() %>% 
+	knitr::kable()
+```
+
+#### MySanJose Web Platform
+```{r, echo=FALSE, warning=FALSE, out.height='50%', out.width='50%'}
+data_requests %>% 
+	gather_data(request_source = "Web") %>% 
+	find_demographic_descriptors() %>% 
+	knitr::kable()
+```
+
+\newpage
+### Abandoned Vehicle
+
+#### All MySanJose Platforms
+```{r, echo=FALSE, warning=FALSE}
+data_requests %>% 
+	gather_data(request_type = "Abandoned Vehicle") %>% 
+	find_demographic_descriptors() %>% 
+	knitr::kable()
+```
+
+#### MySanJose Mobile App
+```{r, echo=FALSE, warning=FALSE}
+data_requests %>% 
+	gather_data(request_source = "Mobile", request_type = "Abandoned Vehicle") %>% 
+	find_demographic_descriptors() %>% 
+	knitr::kable()
+```
+
+#### MySanJose Web Platform
+```{r, echo=FALSE, warning=FALSE}
+data_requests %>% 
+	gather_data(request_source = "Web", request_type = "Abandoned Vehicle") %>% 
+	find_demographic_descriptors() %>% 
+	knitr::kable()
+```
+
+\newpage
+### Illegal Dumping
+
+#### All MySanJose Platforms
+```{r, echo=FALSE, warning=FALSE}
+data_requests %>% 
+	gather_data(request_type = "Illegal Dumping") %>% 
+	find_demographic_descriptors() %>% 
+	knitr::kable()
+```
+
+#### MySanJose Mobile App
+```{r, echo=FALSE, warning=FALSE}
+data_requests %>% 
+	gather_data(request_source = "Mobile", request_type = "Illegal Dumping") %>% 
+	find_demographic_descriptors() %>% 
+	knitr::kable()
+```
+
+#### MySanJose Web Platform
+```{r, echo=FALSE, warning=FALSE}
+data_requests %>% 
+	gather_data(request_source = "Web", request_type = "Illegal Dumping") %>% 
+	find_demographic_descriptors() %>% 
+	knitr::kable()
+```
+
+\newpage
+### General Requests
+
+#### All MySanJose Platforms
+```{r, echo=FALSE, warning=FALSE}
+data_requests %>% 
+	gather_data(request_type = "General Request") %>% 
+	find_demographic_descriptors() %>% 
+	knitr::kable()
+```
+
+#### MySanJose Mobile App
+```{r, echo=FALSE, warning=FALSE}
+data_requests %>% 
+	gather_data(request_source = "Mobile", request_type = "General Request") %>% 
+	find_demographic_descriptors() %>% 
+	knitr::kable()
+```
+
+#### MySanJose Web Platform
+```{r, echo=FALSE, warning=FALSE}
+data_requests %>% 
+	gather_data(request_source = "Web", request_type = "General Request") %>% 
+	find_demographic_descriptors() %>% 
+	knitr::kable()
+```
+
+\newpage
+### Graffiti
+
+#### All MySanJose Platforms
+```{r, echo=FALSE, warning=FALSE}
+data_requests %>% 
+	gather_data(request_type = "Graffiti") %>% 
+	find_demographic_descriptors() %>% 
+	knitr::kable()
+```
+
+#### MySanJose Mobile App
+```{r, echo=FALSE, warning=FALSE}
+data_requests %>% 
+	gather_data(request_source = "Mobile", request_type = "Graffiti") %>% 
+	find_demographic_descriptors() %>% 
+	knitr::kable()
+```
+
+#### MySanJose Web Platform
+```{r, echo=FALSE, warning=FALSE}
+data_requests %>% 
+	gather_data(request_source = "Web", request_type = "Graffiti") %>% 
+	find_demographic_descriptors() %>% 
+	knitr::kable()
+```
+
+\newpage
+### Streetlight Outage
+
+#### All MySanJose Platforms
+```{r, echo=FALSE, warning=FALSE}
+data_requests %>% 
+	gather_data(request_type = "Streetlight Outage") %>% 
+	find_demographic_descriptors() %>% 
+	knitr::kable()
+```
+
+#### MySanJose Mobile App
+```{r, echo=FALSE, warning=FALSE}
+data_requests %>% 
+	gather_data(request_source = "Mobile", request_type = "Streetlight Outage") %>% 
+	find_demographic_descriptors() %>% 
+	knitr::kable()
+```
+
+#### MySanJose Web Platform
+```{r, echo=FALSE, warning=FALSE}
+data_requests %>% 
+	gather_data(request_source = "Web", request_type = "Streetlight Outage") %>% 
+	find_demographic_descriptors() %>% 
+	knitr::kable()
+```
+
+\newpage
+### Pothole
+
+#### All MySanJose Platforms
+```{r, echo=FALSE, warning=FALSE}
+data_requests %>% 
+	gather_data(request_type = "Pothole") %>% 
+	find_demographic_descriptors() %>% 
+	knitr::kable()
+```
+
+#### MySanJose Mobile App
+```{r, echo=FALSE, warning=FALSE}
+data_requests %>% 
+	gather_data(request_source = "Mobile", request_type = "Pothole") %>% 
+	find_demographic_descriptors() %>% 
+	knitr::kable()
+```
+
+#### MySanJose Web Platform
+```{r, echo=FALSE, warning=FALSE}
+data_requests %>% 
+	gather_data(request_source = "Web", request_type = "Pothole") %>% 
+	find_demographic_descriptors() %>% 
+	knitr::kable()
+```
+
+
+## Duplicates Analysis
+```{r}
+data_requests %>% 
+	mutate(
+		date = date(date_created) %>% as.character(),
+		latitude = latitude %>% round(digits = 3),
+		longitude = longitude %>% round(digits = 3)
+	) %>% 
+	count(request_creation_year, request_creation_month, service_requested, latitude, longitude, census_block_id, sort = TRUE) %>% 
+	mutate(latitude = as.character(latitude), longitude = as.character(longitude))
+
+data_requests %>% 
+	mutate(
+		date = date(date_created) %>% as.character(),
+		latitude = as.character(latitude), 
+		longitude = as.character(longitude)
+	) %>% 
+	filter(
+		date == "2019-02-27",
+		service_requested == "Abandoned Vehicle",
+		latitude == "37.3074934",
+		longitude == "-121.8783636",
+		census_block_id == "060855031211"
+	)
+```
+
+```{r}
+data_requests %>% 
+	mutate(
+		date = date(date_created) %>% as.character(),
+		latitude = latitude %>% round(digits = 3),
+		longitude = longitude %>% round(digits = 3)
+	) %>%
+	distinct(service_requested, latitude, longitude, request_creation_year,request_creation_month, census_block_id)
+```
+
