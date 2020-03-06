@@ -1,0 +1,49 @@
+---
+title: "Write Tableau Data"
+author: "Michael Spencer, Barbara Cardona, Guillermo Camarillo, Jorge Nam Song"
+date: "3/5/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+## Setup
+
+### Libraries
+if (!require(tidycensus)) install.packages("tidycensus")
+library(tidycensus)
+
+if (!require(sf)) install.packages("sf")
+library(sf)
+
+if (!require(lubridate)) install.packages("lubridate")
+library(lubridate)
+
+if (!require(tidyverse)) install.packages("tidyverse")
+library(tidyverse)
+
+### Parameters
+write_my_files <- "no" # Change this if you would like fresh data files downloaded
+keep_geometry <- "no" # Change this if you plan on mapping the data here in R
+
+vars_of_interest <- c(
+	"linguistic_isolation_(percent_households)",
+	"bg_ed_percent_college_educated",
+	"bg_med_age",
+	"bg_percent_prop_households_owner_occ",
+	"bg_percent_prop_households_renter_occ",
+	"bg_pop_percent_white",
+	"bg_pop_percent_hispanic",
+	"bg_pop_percent_asian",
+	"bg_med_income",
+	"cellular_data_subscription_(percent_of_pop)",
+	"broadband_subscription_(percent_of_pop)",
+	"bg_med_home_value"
+)
+
+source("../scripts/data/generate_aggregate_data.R")
+```
+
