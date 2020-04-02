@@ -10,7 +10,7 @@
 ################################################################################
 
 ### Parameters
-filepath_raw_requests <- "../data_raw/MySanJose Public Requests 18_19 FY through Q1 19_20 FY_Stanford MS&E.xlsx"
+filepath_raw_requests <- "../data_raw/MySanJose Public Requests 18_19 FY through Q1 19_20 FY_Stanford MS&E_Duplicates Removed_2.28.20.xlsx"
 filepath_spi <- "../data_raw/San Jose Social Progress Index Data.xlsx"
 
 ### Load Data
@@ -32,7 +32,7 @@ data_spi <-
 ########################## PREP DATA FOR JOINING ###############################
 ################################################################################
 
-### Manage Social Prgress Index Data
+### Manage Social Progress Index Data
 data_spi <-
 	data_spi %>% 
 	# Appends leading 0 to match other datasets and parses into individual FIPS
@@ -62,4 +62,6 @@ data <-
 	left_join(data_spi, by = c('st_fip', 'cty_fip', 'trt_fip')) %>% 
 	st_sf()
 
-rm(data_census, data_requests, data_spi)
+# rm(data_census, data_requests, data_spi)
+
+rm(data_requests)

@@ -38,5 +38,6 @@ table_census_vars <-
 		api_speaking       = "C16002_009",
 		api_limited        = "C16002_010",
 		hhlds_owner_occ    = "B25003_002",
-		hhlds_renter_occ   = "B25003_003"
+		hhlds_renter_occ   = "B25003_003",
+		med_home_value     = "B25077_001"
 	)

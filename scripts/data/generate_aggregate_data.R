@@ -125,9 +125,12 @@ data_tableau <-
 		crashes_resulting_in_injury_death_rate = crashes_resulting_in_injury_death_rate/1000,
 		property_crime_rate = property_crime_rate/100000,
 		violent_crime_rate = violent_crime_rate/100000,
-		requests_per_person = total_num_requests/bg_pop_total
+		requests_per_person = total_num_requests/bg_pop_total,
+		prop_requests_web_and_mobile = 1 - prop_requests_agent_desktop
 	)
 
 data_tableau %>% 
 	select(-geometry) %>% 
 	write_tsv(path = "../data_clean/requests/beautifysj_tableau_data.tsv")
+
+rm(data_census, data_spi)

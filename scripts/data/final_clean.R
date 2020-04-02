@@ -68,6 +68,11 @@ data <-
 		request_creation_year = date_created %>% year(),
 		request_creation_month = date_created %>% month(label = TRUE, abbr = TRUE),
 		request_creation_weekday = date_created %>% wday(label = TRUE, abbr = TRUE)
+	) %>% 
+	
+	## Clean data for erroneous requests
+	filter(
+		service_requested != "No Value" # Filter out 2 unknown requests
 	)
 
 ################################################################################
@@ -128,6 +133,7 @@ data_descriptive <-
 		-request_creation_month,
 		-request_creation_weekday,
 		-san_jose_council_district
-	)
+	) %>% 
+	distinct()
 
 rm(data)
