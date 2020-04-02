@@ -9,7 +9,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-```{r}
+```{r, include=FALSE}
 ## Setup
 
 ### Libraries
@@ -46,4 +46,5 @@ vars_of_interest <- c(
 
 source("../scripts/data/generate_aggregate_data.R")
 ```
+
 

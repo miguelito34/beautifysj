@@ -28,6 +28,7 @@ library(tidyverse)
 ### Parameters
 write_my_files <- "no" # Change this if you would like fresh data files downloaded
 keep_geometry <- "no" # Change this if you plan on mapping the data here in R
+
 vars_of_interest <- c(
 	"linguistic_isolation_(percent_households)",
 	"bg_ed_percent_college_educated",
@@ -39,7 +40,8 @@ vars_of_interest <- c(
 	"bg_pop_percent_asian",
 	"bg_med_income",
 	"cellular_data_subscription_(percent_of_pop)",
-	"broadband_subscription_(percent_of_pop)"
+	"broadband_subscription_(percent_of_pop)",
+	"bg_med_home_value"
 )
 
 
@@ -98,7 +100,31 @@ data_requests %>%
 ```
 
 \newpage
-## Demographic Descriptors By Channel and Request Type
+## Demographics of Requesting Census Block Groups
+```{r, echo=FALSE, warning=FALSE, out.height='50%', out.width='50%'}
+data_requests %>% distinct(census_block_id) %>% 
+	left_join(data_descriptive, by = "census_block_id") %>% 
+	summarize_at(
+		vars_of_interest, 
+		list(
+			xthirtieth_percentile = ~quantile(., .3, na.rm = TRUE),
+			xmedian = median,
+			xseventieth_percentile = ~quantile(., .7, na.rm = TRUE)
+		), 
+		na.rm = TRUE
+	) %>%
+	gather(key = "var", value = "val") %>% 
+	mutate(val = val %>% format(scientific = FALSE, digits = 3)) %>%
+	separate(var, into = c("var", "percentile"), sep = "_x") %>% 
+	spread(key = percentile, value = val) %>% 
+	select(var, thirtieth_percentile, median, seventieth_percentile) %>% 
+	arrange(desc(var)) %>% 
+	knitr::kable()
+```
+
+
+\newpage
+## Demographic Descriptors By Channel
 
 \newpage
 ### All Requests
@@ -108,6 +134,69 @@ data_requests %>%
 ```{r, echo=FALSE, warning=FALSE, out.height='50%', out.width='50%'}
 data_requests %>% 
 	gather_data() %>% 
+	find_demographic_descriptors() %>%
+	knitr::kable()
+
+data_requests %>% 
+	gather_data() %>% 
+	find_demographic_descriptors_var() %>%
+	knitr::kable()
+```
+
+\newpage
+#### MySanJose Mobile App
+```{r, echo=FALSE, warning=FALSE, out.height='50%', out.width='50%'}
+data_requests %>% 
+	gather_data(request_source = "Mobile") %>% 
+	find_demographic_descriptors() %>% 
+	knitr::kable()
+
+data_requests %>% 
+	gather_data(request_source = "Mobile") %>% 
+	find_demographic_descriptors_var() %>% 
+	knitr::kable()
+```
+
+\newpage
+#### MySanJose Web Platform
+```{r, echo=FALSE, warning=FALSE, out.height='50%', out.width='50%'}
+data_requests %>% 
+	gather_data(request_source = "Web") %>% 
+	find_demographic_descriptors() %>% 
+	knitr::kable()
+
+data_requests %>% 
+	gather_data(request_source = "Web") %>% 
+	find_demographic_descriptors_var() %>% 
+	knitr::kable()
+```
+
+\newpage
+#### Agent Desktop
+```{r, echo=FALSE, warning=FALSE, out.height='50%', out.width='50%'}
+data_requests %>% 
+	gather_data(request_source = "Agent desktop") %>% 
+	find_demographic_descriptors() %>%
+	knitr::kable()
+
+data_requests %>% 
+	gather_data(request_source = "Agent desktop") %>% 
+	find_demographic_descriptors_var() %>%
+	knitr::kable()
+```
+
+\newpage
+## Demographic Descriptors By District
+
+\newpage
+### District 1
+
+#### All MySanJose Platforms
+
+```{r, echo=FALSE, warning=FALSE, out.height='50%', out.width='50%'}
+data_requests %>% 
+	filter(san_jose_council_district == 1) %>% 
+	gather_data() %>% 
 	find_demographic_descriptors() %>% 
 	knitr::kable()
 ```
@@ -115,6 +204,7 @@ data_requests %>%
 #### MySanJose Mobile App
 ```{r, echo=FALSE, warning=FALSE, out.height='50%', out.width='50%'}
 data_requests %>% 
+	filter(san_jose_council_district == 1) %>% 
 	gather_data(request_source = "Mobile") %>% 
 	find_demographic_descriptors() %>% 
 	knitr::kable()
@@ -123,10 +213,292 @@ data_requests %>%
 #### MySanJose Web Platform
 ```{r, echo=FALSE, warning=FALSE, out.height='50%', out.width='50%'}
 data_requests %>% 
+	filter(san_jose_council_district == 1) %>% 
 	gather_data(request_source = "Web") %>% 
 	find_demographic_descriptors() %>% 
 	knitr::kable()
 ```
+
+\newpage
+### District 2
+
+#### All MySanJose Platforms
+
+```{r, echo=FALSE, warning=FALSE, out.height='50%', out.width='50%'}
+data_requests %>% 
+	filter(san_jose_council_district == 2) %>% 
+	gather_data() %>% 
+	find_demographic_descriptors() %>% 
+	knitr::kable()
+```
+
+#### MySanJose Mobile App
+```{r, echo=FALSE, warning=FALSE, out.height='50%', out.width='50%'}
+data_requests %>% 
+	filter(san_jose_council_district == 2) %>% 
+	gather_data(request_source = "Mobile") %>% 
+	find_demographic_descriptors() %>% 
+	knitr::kable()
+```
+
+#### MySanJose Web Platform
+```{r, echo=FALSE, warning=FALSE, out.height='50%', out.width='50%'}
+data_requests %>% 
+	filter(san_jose_council_district == 2) %>% 
+	gather_data(request_source = "Web") %>% 
+	find_demographic_descriptors() %>% 
+	knitr::kable()
+```
+
+\newpage
+### District 3
+
+#### All MySanJose Platforms
+```{r, echo=FALSE, warning=FALSE, out.height='50%', out.width='50%'}
+data_requests %>% 
+	filter(san_jose_council_district == 3) %>% 
+	gather_data() %>% 
+	find_demographic_descriptors() %>% 
+	knitr::kable()
+```
+
+#### MySanJose Mobile App
+```{r, echo=FALSE, warning=FALSE, out.height='50%', out.width='50%'}
+data_requests %>% 
+	filter(san_jose_council_district == 3) %>% 
+	gather_data(request_source = "Mobile") %>% 
+	find_demographic_descriptors() %>% 
+	knitr::kable()
+```
+
+#### MySanJose Web Platform
+```{r, echo=FALSE, warning=FALSE, out.height='50%', out.width='50%'}
+data_requests %>% 
+	filter(san_jose_council_district == 3) %>% 
+	gather_data(request_source = "Web") %>% 
+	find_demographic_descriptors() %>% 
+	knitr::kable()
+```
+
+\newpage
+### District 4
+
+#### All MySanJose Platforms
+
+```{r, echo=FALSE, warning=FALSE, out.height='50%', out.width='50%'}
+data_requests %>% 
+	filter(san_jose_council_district == 4) %>% 
+	gather_data() %>% 
+	find_demographic_descriptors() %>% 
+	knitr::kable()
+```
+
+#### MySanJose Mobile App
+```{r, echo=FALSE, warning=FALSE, out.height='50%', out.width='50%'}
+data_requests %>% 
+	filter(san_jose_council_district == 4) %>% 
+	gather_data(request_source = "Mobile") %>% 
+	find_demographic_descriptors() %>% 
+	knitr::kable()
+```
+
+#### MySanJose Web Platform
+```{r, echo=FALSE, warning=FALSE, out.height='50%', out.width='50%'}
+data_requests %>% 
+	filter(san_jose_council_district == 4) %>% 
+	gather_data(request_source = "Web") %>% 
+	find_demographic_descriptors() %>% 
+	knitr::kable()
+```
+
+\newpage
+### District 5
+
+#### All MySanJose Platforms
+
+```{r, echo=FALSE, warning=FALSE, out.height='50%', out.width='50%'}
+data_requests %>% 
+	filter(san_jose_council_district == 5) %>% 
+	gather_data() %>% 
+	find_demographic_descriptors() %>% 
+	knitr::kable()
+```
+
+#### MySanJose Mobile App
+```{r, echo=FALSE, warning=FALSE, out.height='50%', out.width='50%'}
+data_requests %>% 
+	filter(san_jose_council_district == 5) %>% 
+	gather_data(request_source = "Mobile") %>% 
+	find_demographic_descriptors() %>% 
+	knitr::kable()
+```
+
+#### MySanJose Web Platform
+```{r, echo=FALSE, warning=FALSE, out.height='50%', out.width='50%'}
+data_requests %>% 
+	filter(san_jose_council_district == 5) %>% 
+	gather_data(request_source = "Web") %>% 
+	find_demographic_descriptors() %>% 
+	knitr::kable()
+```
+
+\newpage
+### District 6
+
+#### All MySanJose Platforms
+
+```{r, echo=FALSE, warning=FALSE, out.height='50%', out.width='50%'}
+data_requests %>% 
+	filter(san_jose_council_district == 6) %>% 
+	gather_data() %>% 
+	find_demographic_descriptors() %>% 
+	knitr::kable()
+```
+
+#### MySanJose Mobile App
+```{r, echo=FALSE, warning=FALSE, out.height='50%', out.width='50%'}
+data_requests %>% 
+	filter(san_jose_council_district == 6) %>% 
+	gather_data(request_source = "Mobile") %>% 
+	find_demographic_descriptors() %>% 
+	knitr::kable()
+```
+
+#### MySanJose Web Platform
+```{r, echo=FALSE, warning=FALSE, out.height='50%', out.width='50%'}
+data_requests %>% 
+	filter(san_jose_council_district == 6) %>% 
+	gather_data(request_source = "Web") %>% 
+	find_demographic_descriptors() %>% 
+	knitr::kable()
+```
+
+\newpage
+### District 7
+
+#### All MySanJose Platforms
+
+```{r, echo=FALSE, warning=FALSE, out.height='50%', out.width='50%'}
+data_requests %>% 
+	filter(san_jose_council_district == 7) %>% 
+	gather_data() %>% 
+	find_demographic_descriptors() %>% 
+	knitr::kable()
+```
+
+#### MySanJose Mobile App
+```{r, echo=FALSE, warning=FALSE, out.height='50%', out.width='50%'}
+data_requests %>% 
+	filter(san_jose_council_district == 7) %>% 
+	gather_data(request_source = "Mobile") %>% 
+	find_demographic_descriptors() %>% 
+	knitr::kable()
+```
+
+#### MySanJose Web Platform
+```{r, echo=FALSE, warning=FALSE, out.height='50%', out.width='50%'}
+data_requests %>% 
+	filter(san_jose_council_district == 7) %>% 
+	gather_data(request_source = "Web") %>% 
+	find_demographic_descriptors() %>% 
+	knitr::kable()
+```
+
+\newpage
+### District 8
+
+#### All MySanJose Platforms
+
+```{r, echo=FALSE, warning=FALSE, out.height='50%', out.width='50%'}
+data_requests %>% 
+	filter(san_jose_council_district == 8) %>% 
+	gather_data() %>% 
+	find_demographic_descriptors() %>% 
+	knitr::kable()
+```
+
+#### MySanJose Mobile App
+```{r, echo=FALSE, warning=FALSE, out.height='50%', out.width='50%'}
+data_requests %>% 
+	filter(san_jose_council_district == 8) %>% 
+	gather_data(request_source = "Mobile") %>% 
+	find_demographic_descriptors() %>% 
+	knitr::kable()
+```
+
+#### MySanJose Web Platform
+```{r, echo=FALSE, warning=FALSE, out.height='50%', out.width='50%'}
+data_requests %>% 
+	filter(san_jose_council_district == 8) %>% 
+	gather_data(request_source = "Web") %>% 
+	find_demographic_descriptors() %>% 
+	knitr::kable()
+```
+
+\newpage
+### District 9
+
+#### All MySanJose Platforms
+
+```{r, echo=FALSE, warning=FALSE, out.height='50%', out.width='50%'}
+data_requests %>% 
+	filter(san_jose_council_district == 9) %>% 
+	gather_data() %>% 
+	find_demographic_descriptors() %>% 
+	knitr::kable()
+```
+
+#### MySanJose Mobile App
+```{r, echo=FALSE, warning=FALSE, out.height='50%', out.width='50%'}
+data_requests %>% 
+	filter(san_jose_council_district == 9) %>% 
+	gather_data(request_source = "Mobile") %>% 
+	find_demographic_descriptors() %>% 
+	knitr::kable()
+```
+
+#### MySanJose Web Platform
+```{r, echo=FALSE, warning=FALSE, out.height='50%', out.width='50%'}
+data_requests %>% 
+	filter(san_jose_council_district == 9) %>% 
+	gather_data(request_source = "Web") %>% 
+	find_demographic_descriptors() %>% 
+	knitr::kable()
+```
+
+\newpage
+### District 10
+
+#### All MySanJose Platforms
+
+```{r, echo=FALSE, warning=FALSE, out.height='50%', out.width='50%'}
+data_requests %>% 
+	filter(san_jose_council_district == 10) %>% 
+	gather_data() %>% 
+	find_demographic_descriptors() %>% 
+	knitr::kable()
+```
+
+#### MySanJose Mobile App
+```{r, echo=FALSE, warning=FALSE, out.height='50%', out.width='50%'}
+data_requests %>% 
+	filter(san_jose_council_district == 10) %>% 
+	gather_data(request_source = "Mobile") %>% 
+	find_demographic_descriptors() %>% 
+	knitr::kable()
+```
+
+#### MySanJose Web Platform
+```{r, echo=FALSE, warning=FALSE, out.height='50%', out.width='50%'}
+data_requests %>% 
+	filter(san_jose_council_district == 10) %>% 
+	gather_data(request_source = "Web") %>% 
+	find_demographic_descriptors() %>% 
+	knitr::kable()
+```
+
+\newpage
+## Demographic Descriptors By Channel and Request Type
 
 \newpage
 ### Abandoned Vehicle
