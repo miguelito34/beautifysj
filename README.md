@@ -1,11 +1,13 @@
 # Analyzing the Efficacy of the BeautifySJ Initative
 
 ### Overview
-We will analyze 311 requests in San Jose to understand strends in the systems use and potential areas for improvement. Namely, we will focus on the following questions:
+We analyze 311 requests in San Jose to understand strends in the systems use and potential areas for improvement. Namely, we will focus on the following questions:
 
 * What are the demographic descriptors of the census block groups who are requesting a majority of services through the mobile app? 
 * What are the demographic descriptors of the census block groups who are requesting a majority of services through the web platforms?
 * What are the demographic descriptors of the census block groups who are requesting a majority of services through the MySanJose platforms (web and mobile app) combined?
+
+You can find our [final report here](https://drive.google.com/a/stanford.edu/file/d/1XsUM0m2d2L0ukS3CWcVluM_lDy3Dm3HU/view?usp=sharing) and a [slide deck here](https://drive.google.com/a/stanford.edu/file/d/1p3IbgqRDtsKjL3-YI1qaGrbpi_4zXVYs/view?usp=sharing).
 
 ### Getting Set Up
 
@@ -13,9 +15,6 @@ We will analyze 311 requests in San Jose to understand strends in the systems us
 
 1. Folder Structure
 
-* __data__: cleaned data
-* __data_raw__: raw data
-* __docs__: data documentation and notes
 * __analysis__: exploratory data analysis on your cleaned data
 * __scripts__: data-cleaning scripts
 * __reports__: findings to present to others
@@ -70,4 +69,4 @@ The data for this project are pulled from many different sources, though they ar
 
 ### Analyzing the Pre-processed Data
 
-You can find the cleaned data to download [here](https://github.com/miguelito34/beautifysj/raw/master/data_clean/requests/beautifysj_data.tsv.zip)
+The scripts used in analysis are provided as is, however the requests data is no longer available per usage agreements with the city.
